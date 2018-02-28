@@ -1,0 +1,15 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 93">
+    <defs>
+    <mask id="abase">
+      <rect x="0" y="0" width="100" height="46" fill="#fff" />
+      <rect x="0" y="54" width="100" height="34" fill="#fff" />
+    </mask>
+    <clipPath id="aext">
+        <path d="M-14,100 19,48.2 19,25 43.5,25 38.5,35 73.5,35 68.5,25 78.3,25 126,100 106,100 86,60 26,60 6,100Z" />
+    </clipPath>
+    </defs>
+    <g stroke="#3c3b3b" stroke-width="6">
+        <polyline points="16,90 56,10 96,90" fill="none" mask="url(#abase)" />
+        <path fill="none" d="M83,30 h-49 C21,30 21,50 33,50 h49 C101,50 101,75 83,75 h-85" clip-path="url(#aext)" />
+    </g>
+</svg>
