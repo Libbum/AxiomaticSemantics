@@ -4,7 +4,7 @@ base_url = "https://axiomatic.neophilus.net"
 
 compile_sass = true
 highlight_code = true
-highlight_theme = "material-light"
+highlight_theme = "Charcoal"
 
 generate_rss = true
 generate_tags_pages = true

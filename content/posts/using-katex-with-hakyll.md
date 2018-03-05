@@ -4,6 +4,8 @@ byline = "Lightning fast math rendering on the off-chance I ever get around to p
 tags = ["LaTeX", "Haskell", "JavaScript"]
 date = 2015-08-06
 aliases = ["/posts/2015-08-16-using-katex-with-hakyll.html"]
+[extra]
+katex = true
 +++
 
 When [Khan Academy](https://www.khanacademy.org/) initially released [KaTeX](http://khan.github.io/KaTeX/) 0.1.0 last year I was overjoyed.
