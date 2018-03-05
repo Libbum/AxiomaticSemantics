@@ -15,7 +15,7 @@ Building static diagrams and graphs (adding [PGFPlots](http://pgfplots.sourcefor
 
 Something I'm working on currently is the classification of voids in amorphous solids, voronoi networks seem to be a great way of expressing the arrangement of atoms in these systems. The following example uses an amorphous aluminium oxide and is represented in 2D so as not to complicate the problem too much.
 
-To simplify things further, I've separated my input data into three csv files that look something like this:
+To simplify things further, I've separated my input data into three <abbr title="Comma Separated Value">csv</abbr> files that look something like this:
 
 ```
 1,Al,10.331817,36.323166,1.250000
@@ -129,5 +129,3 @@ The entire code-set for this project is below. The in-line comments expand on th
 
 \end{document}
 ```
-
-*[csv]: Comma Separated Value

@@ -10,7 +10,7 @@ Whilst my higher education started off in the computer science realm, I quickly 
 
 <!-- more -->
 
-Ultimately though, my __c++__ programs never needed to link to external libraries or worry about machine specific configurations the `-o` switch was the only one I needed when calling `gcc` pretty much. Now I'm building MPI tools to run on supercomputing clusters that need the highly optimised linear algebra routines; written down by our forefathers in a more civilised age.
+Ultimately though, my __c++__ programs never needed to link to external libraries or worry about machine specific configurations the `-o` switch was the only one I needed when calling `gcc` pretty much. Now I'm building <abbr title="Message Passing Interface">MPI</abbr> tools to run on supercomputing clusters that need the highly optimised linear algebra routines; written down by our forefathers in a more civilised age.
 
 I need a Makefile, the file filled with dark arts known only to those with neck beards and ghostly white skin.
 
@@ -72,4 +72,3 @@ Grab the hostname of the machine & check it against known results (in my case I 
 
 _Et voilà!_ Call `make` on either machine and build without a hassle. No more merge conflicts between git branches for me. _A shoutout to [Ash](http://tuxdude.github.com/) who put me on the right path with this issue._
 
-*[MPI]: Message Passing Interface

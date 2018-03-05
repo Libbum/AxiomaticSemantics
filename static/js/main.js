@@ -92,6 +92,14 @@
                 }, 100);
             });
 
+        // Overwrite the default behaviour for abbreviations so we can style them.
+        $('[title]').each( function() {
+            var abbr_title = $(this);
+            abbr_title.data('title',abbr_title.attr('title'));
+            abbr_title.attr('name', abbr_title.attr('title'));
+            abbr_title.removeAttr('title');
+        });
+
         // Intro.
         var $intro = $('#intro');
 
