@@ -172,12 +172,9 @@ pre {
     font-size: 0.9em;
     margin: 0 0 _size(element-margin) 0;
 
-    code {
-        display: block;
-        line-height: 1.75em;
-        padding: 1em 1.5em;
-        overflow-x: auto;
-    }
+    line-height: 1.75em;
+    padding: 1em 1.5em;
+    overflow-x: auto;
 }
 
 hr {

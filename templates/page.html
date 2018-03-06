@@ -105,7 +105,15 @@
                         </div>
                         <div class="meta">
                             <time class="published" datetime="{{ page.date }}">{{ page.date | date(format="%B %e, %Y") }}</time>
-                            <a href="#" class="author"><span class="name">Jane Doe</span><img src="/images/avatar.jpg" alt="" /></a>
+                            <span class="reading">
+                            Reading time:
+                            {% if page.reading_time > 0 %}
+                            about {{ page.reading_time }} minute{{ page.reading_time | pluralize }}
+                            {% else %}
+                            less than a minute
+                            {% endif %}
+                            ({{ page.word_count }} words).
+                            </span>
                         </div>
                     </header>
                     <span class="image featured"><img src="/images/pic01.jpg" alt="" /></span>

@@ -1,0 +1,13 @@
+/* Reading time and word count */
+
+.reading {
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'row');
+    @include vendor('align-items', 'center');
+    @include vendor('justify-content', 'flex-end');
+    border-bottom: 0;
+    font-family: _font(family-heading);
+    font-size: 0.7em;
+    font-weight: _font(weight-heading);
+    letter-spacing: _font(kerning-heading);
+}

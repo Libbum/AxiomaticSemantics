@@ -31,7 +31,7 @@
         }
 
         .meta {
-            @include padding(_size(section-spacing) * 1.25, _size(section-spacing));
+            @include padding(_size(section-spacing) * 1.15, _size(section-spacing));
             border-left: solid 1px _palette(border);
             min-width: 17em;
             text-align: right;
@@ -162,17 +162,9 @@
                     margin-top: 0;
                 }
 
-                .author {
+                .reading {
                     @include vendor('flex-direction', 'row-reverse');
                     margin-bottom: 0;
-
-                    .name {
-                        margin: 0 0 0 1.5em;
-                    }
-
-                    img {
-                        width: 3.5em;
-                    }
                 }
             }
         }
@@ -210,10 +202,8 @@
                     padding-left: 0;
                 }
 
-                .author {
-                    .name {
-                        display: none;
-                    }
+                .reading {
+                    text-align: center;
                 }
             }
         }

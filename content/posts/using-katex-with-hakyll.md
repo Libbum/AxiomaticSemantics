@@ -1,6 +1,6 @@
 +++
 title = "Using KaTeX with Hakyll"
-byline = "Lightning fast math rendering on the off-chance I ever get around to posting some maths."
+description = "Lightning fast math rendering on the off-chance I ever get around to posting some maths."
 tags = ["LaTeX", "Haskell", "JavaScript"]
 date = 2015-08-06
 aliases = ["/posts/2015-08-16-using-katex-with-hakyll.html"]
