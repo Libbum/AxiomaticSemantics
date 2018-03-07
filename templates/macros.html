@@ -1,0 +1,21 @@
+{% macro title(page) %}
+<header>
+    <div class="title">
+        <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+        <p>{{ page.description }}</p>
+    </div>
+    <div class="meta">
+        <time class="published" datetime="{{ page.date }}">{{ page.date | date(format="%B %e, %Y") }}</time>
+        <span class="reading">
+            Reading time:
+            {% if page.reading_time > 0 %}
+            about {{ page.reading_time }} minute{{ page.reading_time | pluralize }}
+            {% else %}
+            less than a minute
+            {% endif %}
+            ({{ page.word_count }} words).
+        </span>
+    </div>
+</header>
+{% endmacro title %}
+
