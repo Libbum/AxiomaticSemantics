@@ -10,8 +10,10 @@
         <!--[if lte IE 9]><link rel="stylesheet" href="/ie9.css" /><![endif]-->
         <!--[if lte IE 8]><link rel="stylesheet" href="/ie8.css" /><![endif]-->
         <title>{{ config.title }}</title>
-        {% set section = get_section(path="posts/_index.md") %}
-        {% for page in section.pages %}
+        {% if config.generate_rss %}
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") }}">
+        {% endif %}
+        {% for page in paginator.pages %}
             {% if page.extra.katex %}
                 {% set_global load_katex = true %}
             {% endif %}
@@ -34,7 +36,7 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">Papers</a></li>
                         <li><a href="#">Archive</a></li>
-                        <li><a href="#">Feed</a></li>
+                        <li><a href="rss.xml">Feed</a></li>
                     </ul>
                 </nav>
                 <nav class="main">
@@ -106,7 +108,7 @@
 
                 <!-- Posts -->
                 {% block content %}
-                {% for page in section.pages %}
+                {% for page in paginator.pages %}
                 <article class="post">
                     <header>
                         <div class="title">
@@ -145,8 +147,20 @@
 
                 <!-- Pagination -->
                 <ul class="actions pagination">
-                    <li><a href="" class="disabled button big previous">Previous Page</a></li>
-                    <li><a href="#" class="button big next">Next Page</a></li>
+                    <li>
+                        {% if paginator.previous %}
+                        <a href="{{ paginator.previous }}" class="button big previous">Previous Page</a>
+                        {% else %}
+                        <a href="#" class="disabled button big previous">Previous Page</a>
+                        {% endif %}
+                    </li>
+                    <li>
+                        {% if paginator.next %}
+                        <a href="{{ paginator.next }}" class="button big next">Next Page</a>
+                        {% else %}
+                        <a href="#" class="disabled button big next">Next Page</a>
+                        {% endif %}
+                    </li>
                 </ul>
 
             </div>
@@ -156,7 +170,7 @@
 
                 <!-- Intro -->
                 <section id="intro">
-                    <a href="#" class="logo"><img src="images/logo.svg" alt="" /></a>
+                    <img src="icons/logo.svg" alt="Axiomatic Semantics" class="logo" />
                     <header>
                         <h2>{{ config.title }}</h2>
                         <p>{{ config.description }}</p>
@@ -279,7 +293,7 @@
                         <li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
                         <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
                     </ul>
-                    <p class="copyright">&copy; Untitled.</p>
+                    <p class="copyright">&copy; 2013&mdash;2017 - Tim DuBois</p>
                 </section>
 
             </section>
