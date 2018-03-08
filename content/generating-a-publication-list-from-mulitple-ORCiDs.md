@@ -18,7 +18,7 @@ Managing publication lists has apparently become yet another piece of administra
 
 A publication list is one of the primary items expected on a research groups website, and we really didn't want to add yet another list to the pile. So, against my better judgment, I delved back into the underworld of **PHP** and hacked together a little **Joomla** module that pulls the publications of multiple individuals via the [ORCiD public API]. That information is then cleared of duplicates, sorted by year and displayed as a list. See it in action over at [TCQP.Science].
 
-``` {.php}
+```php
 <?php
 //Align most sanitised to least, will prefer data from earlier in the array.
 $orcids = array('0000-0002-xxxx-xxxx','0000-0002-yyyy-yyyy','0000-0002-zzzz-zzzz');
