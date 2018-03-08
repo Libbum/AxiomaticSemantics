@@ -1,0 +1,18 @@
+.fill {
+  fill: #fff;
+}
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+.land {
+  fill: #222;
+}
+#map, #map2, #countryName {
+   text-align: center;
+}
+.cselect {
+   fill: #81a2be;
+}

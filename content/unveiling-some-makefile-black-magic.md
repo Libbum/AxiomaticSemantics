@@ -8,17 +8,17 @@ aliases = ["/posts/2013-03-28-unveiling-some-makefile-black-magic.html"]
 
 Whilst my higher education started off in the computer science realm, I quickly became disillusioned and, excluding a decent temporal shift, moved more into the physical sciences. Whilst I never finished my CS degree; what I completed gave me an adequate understanding of development life cycles, program design and sufficient competency in __c++__ to get shit done. When I started heavily coding again, forces shunted me towards __Matlab__ and higher level quick and dirty rapid prototyping. As we all know; you can only go so far in this world and I've recently found myself back into the depths with __c__, __fortran__ and even a little __assembly__.
 
-<!-- more -->
-
 Ultimately though, my __c++__ programs never needed to link to external libraries or worry about machine specific configurations the `-o` switch was the only one I needed when calling `gcc` pretty much. Now I'm building <abbr title="Message Passing Interface">MPI</abbr> tools to run on supercomputing clusters that need the highly optimised linear algebra routines; written down by our forefathers in a more civilised age.
+
+<!-- more -->
 
 I need a Makefile, the file filled with dark arts known only to those with neck beards and ghostly white skin.
 
 Realistically, Makefiles are relatively simple things, but seem to have a stigma associated with them if you're outside the computer science sphere. In fact; here's a quote from my PhD supervisor when I told him about my knowledge gain concerning this post:
 
-> Hehe, careful.  Those that learn how to write makefiles are usually doomed to vanish .... banished to a basement (or IT department of a fortune 500 company) for all eternity.
+> Hehe, careful.  Those that learn how to write makefiles are usually doomed to vanish &hellip; banished to a basement (or IT department of a fortune 500 company) for all eternity.
 
-I guess writing this post and publishing it on the internet is sealing my fate...
+I guess writing this post and publishing it on the internet is sealing my fate&hellip;
 
 The _my first Makefile_ tutorials around the internet are not too bad (take a look at [WLUG](http://www.wlug.org.nz/MakefileHowto) and [Mrbook](http://mrbook.org/blog/tutorials/make/) to get started); but the Black Magic I eluded to in the title of this post is much cooler than just typing `make` instead of `g++ main.cpp interrobang.cpp -o omgwtfbbq`.
 

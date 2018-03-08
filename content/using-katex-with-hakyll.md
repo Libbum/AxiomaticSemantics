@@ -22,7 +22,7 @@ katex.render("c = \\pm\\sqrt{a^2 + b^2}", element);
 ```
 
 Not really a problem in general, although it was obvious for my case I'd have to write some form of math parser for the markdown portion of [Hakyll](http://jaspervdj.be/hakyll/).
-Still being quite the __Haskell__ neophyte, this became something for the too hard <!--BLURB--> basket.
+Still being quite the __Haskell__ neophyte, this became something for the too hard basket.
 Maybe I also rationalised the decision not to work on a solution due to the very restricted subset of __LaTeX__ features implemented at the time.
 I mean, not that I ever do much with relational algebra, but the natural join operator (aka the bowtie: $\bowtie$) wasn't introducted until v0.2.0.
 How am I supposed to make a fancy outfit for my mathematical symbol cat illustrations without a bowtie?
