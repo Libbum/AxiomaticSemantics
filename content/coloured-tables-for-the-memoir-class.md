@@ -33,4 +33,4 @@ Add this to your preamble:
 And set table rules via `\rulecolor{color}`.
 With a little bit of tweaking, your tables will scrub up quite well.
 
-![A Memoir class table with coloured horizontal rules](/images/table.png)
+{{ figure(src="table.png", caption="A Memoir class table with coloured horizontal rules") }}

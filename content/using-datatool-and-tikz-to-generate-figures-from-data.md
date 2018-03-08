@@ -58,7 +58,7 @@ grabs the location of `x` from `data` at `idx`, where that index value equals `\
 
 If you include all of this with some Ti*k*Z trickery, it's fairly simple to generate a number of figures like this incredibly fast with a myriad of different data sets.
 
-![Voronoi diagram of amorphous aluminium oxide](/images/voronoi.png)
+{{ figure(src="voronoi.png", caption="Voronoi diagram of amorphous aluminium oxide") }}
 
 The entire code-set for this project is below. The in-line comments expand on the syntax I outline above and should answer most questions you may have about each functions purpose.
 

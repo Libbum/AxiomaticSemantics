@@ -1,8 +1,8 @@
 <figure>
     {% if width %}
-    <img src="{{ src }}" alt="{{ caption }}" width="{{ width }}" />
+    <img src="/images/{{ src }}" alt="{{ caption }}" width="{{ width }}" />
     {% else %}
-    <img src="{{ src }}" alt="{{ caption }}" />
+    <img src="/images/{{ src }}" alt="{{ caption }}" />
     {% endif %}
     <figcaption>{{ caption }}</figcaption>
 </figure>

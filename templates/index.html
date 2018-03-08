@@ -51,16 +51,16 @@
                 <ul class="actions pagination">
                     <li>
                         {% if paginator.previous %}
-                        <a href="{{ paginator.previous }}" class="button big previous">Previous Page</a>
+                        <a href="{{ paginator.previous }}" class="button big previous">Newer Posts</a>
                         {% else %}
-                        <a href="#" class="disabled button big previous">Previous Page</a>
+                        <a href="#" class="disabled button big previous">Latest Posts</a>
                         {% endif %}
                     </li>
                     <li>
                         {% if paginator.next %}
-                        <a href="{{ paginator.next }}" class="button big next">Next Page</a>
+                        <a href="{{ paginator.next }}" class="button big next">Older Posts</a>
                         {% else %}
-                        <a href="#" class="disabled button big next">Next Page</a>
+                        <a href="#" class="disabled button big next">Oldest Posts</a>
                         {% endif %}
                     </li>
                 </ul>

@@ -12,7 +12,7 @@ So you want to do some sphere packing to make your inflatable [space habitats](h
 Perfectly straightforward you think to yourself; since one can start with a triplet of spheres tangent pairwise by placing one at some origin on a 2D plane, extending the second out in the \\(x\\) direction and completing the triangle by identifying the third sphere's position based on the radii of all three.
 
 <figure>
-<img src="triplet_diagram.svg" width="50%" />
+<img src="/images/triplet_diagram.svg" width="50%" />
 <figcaption>An initial sphere triplet located on the vertices of a triangle with side lengths constructed from sphere radii: \(a=r_B+r_C, b=r_A+r_C, c=r_A+r_B\)</figcaption>
 </figure>
 
