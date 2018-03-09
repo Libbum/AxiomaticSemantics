@@ -1,6 +1,6 @@
 +++
 title = "Hello World"
-description = "Tabula Rasa"
+description = "Tabula Rasa."
 date = 2013-03-02
 tags = ["Entropy"]
 aliases = ["/posts/2013-03-02-hello-world.html"]

@@ -1,6 +1,6 @@
 +++
 title = "Workman layout for Vim"
-description = "For those of us who REALLY need to type using three layouts"
+description = "For those of us who REALLY need to type using three layouts."
 tags = ["Vim", "Workman"]
 date = 2013-08-13
 aliases = ["/posts/2013-08-13-workman-layout-for-vim.html"]

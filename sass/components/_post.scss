@@ -7,6 +7,22 @@
     margin: 0 0 _size(section-spacing) 0;
     position: relative;
 
+    .list {
+        margin-bottom: 0;
+    }
+
+    .published {
+        color: _palette(fg-bold);
+        display: block;
+        font-family: _font(family-heading);
+        font-size: 0.7em;
+        font-weight: _font(weight-heading-bold);
+        letter-spacing: _font(kerning-heading);
+        margin-top: 0.5em;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
     > header {
         @include vendor('display', 'flex');
         border-bottom: solid 1px _palette(border);
