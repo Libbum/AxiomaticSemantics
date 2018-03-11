@@ -23,6 +23,17 @@
         white-space: nowrap;
     }
 
+    .bio {
+        float: left;
+        margin-right: 2em;
+        img {
+            padding: 5px;
+            border: solid 1px #CCC;
+            box-shadow: 1px 1px 5px #999;
+            margin-bottom: 0.5em;
+        }
+    }
+
     > header {
         @include vendor('display', 'flex');
         border-bottom: solid 1px _palette(border);
