@@ -8,7 +8,7 @@ highlight_theme = "charcoal"
 
 generate_rss = true
 generate_tags_pages = true
-generate_categories_pages = true
+generate_categories_pages = false
 
 [extra.author]
 name = "Tim DuBois"

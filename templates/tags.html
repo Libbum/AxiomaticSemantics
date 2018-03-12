@@ -1,0 +1,12 @@
+{% extends "page.html" %}
+
+{% block content %}
+<article class="post">
+    <h2>{{ tags | length }} tags in total</h2>
+    <ul class="alt">
+        {% for tag in tags %}
+        <li><a href="{{ get_taxonomy_url(kind="tag", name=tag.name) }}">{{ tag.name }}</a> ({{ tag.pages | length }})</li>
+        {% endfor %}
+    </ul>
+</article>
+{% endblock content %}
