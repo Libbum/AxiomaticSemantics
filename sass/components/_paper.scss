@@ -1,0 +1,25 @@
+/* Papers */
+
+.pub-list { 
+    padding: 0; 
+}
+
+li.pub-item { 
+    display: block;
+    margin-top: 1em;
+}
+
+.pub-block {
+    display: inline-block;
+    vertical-align: text-top
+}
+
+.pub-title { font-weight:bold }
+.pub-vol { font-weight:bold }
+.pub-journal { font-style:italic }
+.pub-links { font-size:90%; font-weight:600 }
+.abstract { display: none }
+
+.abstractlink {
+    box-shadow: none;
+}
