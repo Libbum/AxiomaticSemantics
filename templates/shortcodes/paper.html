@@ -1,0 +1,10 @@
+<li class="pub-item">
+    <div class="pub-block">
+        <div class="pub-title">{{ title }}</div>
+        <div class="pub-authors">{{ authors }}</div>
+        <div class="pub-details"><a href="http://doi.org/{{ doi }}"><span class="pub-journal">{{ journal }}</span> <span class="pub-vol">{{ vol }}</span> {{ pages }} ({{  year }})</a></div>
+        <span class="pub-links">[<span id="{{ key }}" class="abstractlink">Abstract</span>, <a href="/papers/{{ file }}">PDF</a>]</span>
+    </div>
+
+    <div id="{{ doi }}" class="abstract">{{ abstract }}</div>
+</li>
