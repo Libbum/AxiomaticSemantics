@@ -22,7 +22,6 @@ ul {
     &.alt {
         list-style: none;
         padding-left: 0;
-        columns: 3 200px;
 
         li {
             border-bottom: solid 1px _palette(border);
@@ -33,6 +32,10 @@ ul {
                 padding-top: 0.5em;
             }
         }
+    }
+
+    &.columns {
+        columns: 3 200px;
     }
 
     &.icons {
