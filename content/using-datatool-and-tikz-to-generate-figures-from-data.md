@@ -4,6 +4,8 @@ description = "Or just use print screen and MS Paint, you know, what ever is eas
 date = 2013-03-16
 tags = ["LaTeX", "TikZ"]
 aliases = ["/posts/2013-03-16-using-datatool-and-tikz-to-generate-figures-from-data.html"]
+[extra]
+banner = "paper"
 +++
 
 If you're not already using [PGF and Ti*k*Z](http://sourceforge.net/projects/pgf/) for figures in your **LaTeX** documents, I suggest you take a few evenings and get acquainted with a number of [examples](http://texample.net/tikz/), so you can grasp the magnitude of its' capability&mdash;you certainly won't be disappointed.

@@ -4,6 +4,8 @@ description = "Tabula Rasa."
 date = 2013-03-02
 tags = ["Entropy"]
 aliases = ["/posts/2013-03-02-hello-world.html"]
+[extra]
+banner = "sunrise"
 +++
 
 In the past, my blogs have always been akin to a public, online diary. They tended to generally be inane drivel about what we got up to on Friday night. With that being said, the era I'm referring to is circa 2002; modern technology has moved on&mdash;now we have Facebook for that kind of shit.

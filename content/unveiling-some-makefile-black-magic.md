@@ -4,6 +4,8 @@ description = "Go back to the shadows."
 date = 2013-03-28
 tags = ["C++", "make"]
 aliases = ["/posts/2013-03-28-unveiling-some-makefile-black-magic.html"]
+[extra]
+banner = "lantern"
 +++
 
 Whilst my higher education started off in the computer science realm, I quickly became disillusioned and, excluding a decent temporal shift, moved more into the physical sciences. Whilst I never finished my CS degree; what I completed gave me an adequate understanding of development life cycles, program design and sufficient competency in __c++__ to get shit done. When I started heavily coding again, forces shunted me towards __Matlab__ and higher level quick and dirty rapid prototyping. As we all know; you can only go so far in this world and I've recently found myself back into the depths with __c__, __fortran__ and even a little __assembly__.

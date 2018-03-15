@@ -4,6 +4,8 @@ description = "The rabbit hole keeps getting deeper and deeper. But I like what 
 tags = ["make", "LaTeX"]
 date = 2015-04-09
 aliases = ["/posts/2015-04-09-makefiles-revisited.html"]
+[extra]
+banner = "workbench"
 +++
 
 Writing a thesis. Writing at home, writing at uni, at work, on planes, on machines half way across the planet with Swedish keyboards attached to them. The amount of computers that have my __git__ repository cloned on it is either impressive or terrifying depending on how you look at it. One positive thing about my tree is that a good 90&ndash;95% of my ridiculous figure count has been built in Ti*k*z / PGFPlots. Totally source control friendly, small and portable.

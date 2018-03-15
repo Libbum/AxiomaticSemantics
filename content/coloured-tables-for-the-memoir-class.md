@@ -4,6 +4,8 @@ description = "So long as that colour isn't yellow. I hate yellow."
 tags = ["LaTeX"]
 date = 2014-11-16
 aliases = ["/posts/2014-11-16-coloured-tables-for-the-memoir-class.html"]
+[extra]
+banner = "type"
 +++
 
 If you're a fan of **LaTeX** typography, you may have come across the [Motion Mountain](http://www.motionmountain.net/) set of physics textbooks.

@@ -4,6 +4,8 @@ description = "Productivity tools you employ to make yourself more efficient tha
 tags = ["Rust"]
 date = 2017-06-19
 aliases = ["/posts/2017-06-19-code-coverage-in-rust.html"]
+[extra]
+banner = "control"
 +++
 
 One side project that has been sitting by the wayside since completing my PhD has been to polish up and publish [Wa*f*er](https://github.com/Libbum/Wafer): my fancy 3D wavefunction solver.

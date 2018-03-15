@@ -4,6 +4,8 @@ description = "That is, until the Samsung firmware actually supports their own c
 tags = ["Video", "4K"]
 date = 2014-11-22
 aliases = ["/posts/2014-11-22-converting-4k-content-for-samsung-uhd-televisions.html"]
+[extra]
+banner = "hdr"
 +++
 
 Early adoption of new technologies is usually mired by complications, but what's been shitting me lately is the trend manufacturers seem to have of pushing tech to market that doesn't even support the main draw card of the product. I purchased a Samsung UA55F9000 UHD TV in December 2013: the month they were released, solely for the 4k capability. Fast forward a year later and I'm still fighting with the upper echelons of Samsung tech support concerning the absolute necessity of being able to use my 4k TV to play 4k content.

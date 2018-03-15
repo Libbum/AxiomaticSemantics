@@ -6,6 +6,7 @@ date = 2018-01-16
 aliases = ["/posts/2018-01-16-clustering-tangent-spheres.html"]
 [extra]
 katex = true
+banner = "bubbles"
 +++
 
 So you want to do some sphere packing to make your inflatable [space habitats](https://github.com/Libbum/space-habitats) for deployment on the Moon and Mars snug and cozy.

@@ -4,6 +4,8 @@ description = "Current comment security is a sad state of affairs."
 tags = ["JavaScript", "Security"]
 date = 2017-04-16
 aliases = ["/posts/2017-04-16-from-disqus-to-isso.html"]
+[extra]
+banner = "timepc"
 +++
 
 Due to my erroneous assumption that an OVZ container is indistinguishable from a full OS on the inside, my VPS upgrade from Debian Wheezy to Jessie didn't go exactly as planned&hellip;

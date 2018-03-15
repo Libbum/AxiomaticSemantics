@@ -4,6 +4,8 @@ description = "AKA getting your professors to manage their own bloody lists so y
 tags = ["php", "tcqp"]
 date = 2015-05-23
 aliases = ["/posts/2015-05-23-generating-a-publication-list-from-mulitple-ORCiDs.html"]
+[extra]
+banner = "books"
 +++
 
 A website for my research group outside of the bounds of our abysmal university web restrictions has been discussed for quite some time. It's genesis has only really started recently though, because I've had too many other things on my plate and no-one else has any decent web capability. Whilst I'd much prefer to use a simple static site tool or code something completely from scratch, the other members of my team really need something a bit more point and click. Plus, I'll be leaving the group soon so it's in their best interest to have a well rounded CMS interface with which they can administer the site.

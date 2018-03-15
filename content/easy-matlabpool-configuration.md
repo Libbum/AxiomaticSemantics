@@ -4,6 +4,8 @@ description = "Dive in without caring how deep it is."
 tags = ["Matlab"]
 date = 2014-11-13
 aliases = ["/posts/2014-11-13-Easy-Matlabpool-Configuration.html"]
+[extra]
+banner = "bokeh"
 +++
 
 The new `parpool` option for `Matlab 2014b` is depreciating `matlabpool`, merging the ideas of parallelisation locally and remotely in to one.

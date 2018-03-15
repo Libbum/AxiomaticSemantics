@@ -4,6 +4,8 @@ description = "For those of us who REALLY need to type using three layouts."
 tags = ["Vim", "Workman"]
 date = 2013-08-13
 aliases = ["/posts/2013-08-13-workman-layout-for-vim.html"]
+[extra]
+banner = "typewriter"
 +++
 
 I've recently switched keyboard layouts from Dvorak to [Workman](http://www.workmanlayout.com/blog/). Dvorak has been good to me over the past 5 years or so, but the philosophy behind it wasn't actualised in it's final design. Workman has been optimised for English and minimises finger strain *etc etc*. There's no point rabbiting on about it as all of my praises or critiques are already well fleshed out on the Workman website.
