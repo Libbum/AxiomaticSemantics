@@ -4,6 +4,8 @@ description = "The little guy is often the most important."
 tags = ["JavaScript", "D3.js"]
 date = 2016-04-18
 aliases = ["/posts/2016-04-18-including-small-countries-in-your-world.json.html"]
+[extra]
+banner = "world"
 +++
 
 In the process of building [Odyssey](https://odyssey.neophilus.net), I came across an omission in most of the world structures on [Bl.ocks](http://bl.ocks.org/). Pretty much everyone nowadays grabs the [Natural Earth](http://www.naturalearthdata.com/) `ne_110m_admin_0_countries` dataset, converts it to [TopoJSON](https://github.com/mbostock/topojson), throws the result to a projection such as

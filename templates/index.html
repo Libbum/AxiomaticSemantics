@@ -30,7 +30,11 @@
                 {% for page in paginator.pages %}
                 <article class="post">
                     {{ macros::title(page=page) }}
-                    <a href="#" class="image featured"><img src="/images/pic01.jpg" alt="" /></a>
+                    {% if page.extra.banner %}
+                    <span class="image featured"><img src="/images/{{ page.extra.banner }}-banner.jpg" alt="" /></span>
+                    {% else %}
+                    <span class="image featured"><img src="/images/pic01.jpg" alt="" /></span>
+                    {% endif %}
                     {{ page.summary | safe }}
                     <footer>
                         <ul class="actions">
