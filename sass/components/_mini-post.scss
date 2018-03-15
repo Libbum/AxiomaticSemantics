@@ -21,6 +21,11 @@
                 @include vendor('transform', 'scale(1.05)');
             }
         }
+
+        .svg {
+            margin: 0 auto;
+            width: unset;
+        }
     }
 
     header {
