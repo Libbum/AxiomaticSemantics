@@ -8,6 +8,9 @@
             {% if page.extra.katex %}
                 {% set_global load_katex = true %}
             {% endif %}
+            {% if page.extra.banner %}
+            <link rel="preload" as="image" href="/images/{{ page.extra.banner }}-banner.jpg" />
+            {% endif %}
         {% endfor %}
         {% if load_katex %}
             {% include "katex.html" %}
@@ -31,9 +34,7 @@
                 <article class="post">
                     {{ macros::title(page=page) }}
                     {% if page.extra.banner %}
-                    <span class="image featured"><img src="/images/{{ page.extra.banner }}-banner.jpg" alt="" /></span>
-                    {% else %}
-                    <span class="image featured"><img src="/images/pic01.jpg" alt="" /></span>
+                    <span class="image featured"><img src="/images/{{ page.extra.banner }}-banner.jpg" alt="Banner" /></span>
                     {% endif %}
                     {{ page.summary | safe }}
                     <footer>
