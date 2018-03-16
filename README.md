@@ -1,4 +1,4 @@
-![Logo idea](frontAS.png)
+<center><img src="frontAS.png" alt="Axiomatic Semantics" /></center>
 
 Codebase for [Axiomatic Semantics](https://axiomatic.neophilus.net) using the rust static site generator [Gutenberg](https://github.com/Keats/gutenberg).
 
