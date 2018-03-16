@@ -19,3 +19,12 @@
 </header>
 {% endmacro title %}
 
+{% macro github(repo, blurb, thumb) %}
+<article>
+    <header>
+        <h3><a href="https://github.com/Libbum/{{ repo }}">{{ repo }}</a></h3>
+        <span class="published">{{ blurb }}</span>
+    </header>
+    <a href="https://github.com/Libbum/{{ repo }}" class="image"><img src="/images/{{ thumb }}.jpg" alt="{{ repo }}" /></a>
+</article>
+{% endmacro title %}
