@@ -40,17 +40,17 @@
 
                 <ul class="actions pagination">
                     <li>
-                        {% if page.previous %}
-                        <a href="{{ page.previous.permalink }}" class="button big previous">Newer Post</a>
+                        {% if page.next %}
+                        <a href="{{ page.next.permalink }}" class="button big previous">Newer Post</a>
                         {% else %}
-                        <a href="#" class="disabled button big previous">Newest Post</a>
+                        <a href="#" class="disabled button big">Newest Post</a>
                         {% endif %}
                     </li>
                     <li>
-                        {% if page.next %}
-                        <a href="{{ page.next.permalink }}" class="button big next">Older Post</a>
+                        {% if page.previous %}
+                        <a href="{{ page.previous.permalink }}" class="button big next">Older Post</a>
                         {% else %}
-                        <a href="#" class="disabled button big next">Oldest Post</a>
+                        <a href="#" class="disabled button big">Oldest Post</a>
                         {% endif %}
                     </li>
                 </ul>
