@@ -1,27 +1,3 @@
-/// Makes an element's :before pseudoelement a FontAwesome icon.
-/// @param {string} $content Optional content value to use.
-/// @param {string} $where Optional pseudoelement to target (before or after).
-@mixin icon($content: false, $where: before) {
-
-    text-decoration: none;
-
-    &:#{$where} {
-
-        @if $content {
-            content: $content;
-        }
-
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        text-transform: none !important;
-
-    }
-
-}
-
 /// Applies padding to an element, taking the current element-margin value into account.
 /// @param {mixed} $tb Top/bottom padding.
 /// @param {mixed} $lr Left/right padding.

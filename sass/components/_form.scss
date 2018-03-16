@@ -4,25 +4,7 @@ form {
     margin: 0 0 _size(element-margin) 0;
 
     &.search {
-        @include icon;
         position: relative;
-
-        &:before {
-            color: _palette(fg-light);
-            content: '\f002';
-            display: block;
-            height: _size(element-height);
-            left: 0;
-            line-height: _size(element-height);
-            position: absolute;
-            text-align: center;
-            top: 0;
-            width: 2.5em;
-        }
-
-        > input:first-child {
-            padding-left: 2.5em;
-        }
     }
 }
 
@@ -63,23 +45,8 @@ textarea {
 }
 
 .select-wrapper {
-    @include icon;
     display: block;
     position: relative;
-
-    &:before {
-        color: _palette(border);
-        content: '\f078';
-        display: block;
-        height: _size(element-height);
-        line-height: _size(element-height);
-        pointer-events: none;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        top: 0;
-        width: _size(element-height);
-    }
 
     select::-ms-expand {
         display: none;
@@ -108,7 +75,6 @@ input[type="radio"], {
     z-index: -1;
 
     & + label {
-        @include icon;
         color: _palette(fg);
         cursor: pointer;
         display: inline-block;

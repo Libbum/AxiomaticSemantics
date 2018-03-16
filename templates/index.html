@@ -44,8 +44,8 @@
                             {% for tag in page.tags %}
                             <li><a href="{{ get_taxonomy_url(kind="tag", name=tag) }}">{{ tag }}</a></li>
                             {% endfor %}
-                            <li><a href="#" class="icon fa-heart">28</a></li>
-                            <li><a href="#" class="icon fa-comment">128</a></li>
+                            <li><a href="#"><i class="fal fa-heart"></i> 28</a></li>
+                            <li><a href="#"><i class="fal fa-comments"></i> 128</a></li>
                         </ul>
                     </footer>
                 </article>
@@ -56,14 +56,14 @@
                 <ul class="actions pagination">
                     <li>
                         {% if paginator.previous %}
-                        <a href="{{ paginator.previous }}" class="button big previous">Newer Posts</a>
+                        <a href="{{ paginator.previous }}" class="button big"><i class="fal fa-chevron-double-left"></i> Newer Posts</a>
                         {% else %}
                         <a href="#" class="disabled button big">Latest Posts</a>
                         {% endif %}
                     </li>
                     <li>
                         {% if paginator.next %}
-                        <a href="{{ paginator.next }}" class="button big next">Older Posts</a>
+                        <a href="{{ paginator.next }}" class="button big">Older Posts <i class="fal fa-chevron-double-right"></i></a>
                         {% else %}
                         <a href="#" class="disabled button big">Oldest Posts</a>
                         {% endif %}

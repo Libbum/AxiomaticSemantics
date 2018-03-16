@@ -52,7 +52,6 @@ ul {
             }
 
             > * {
-                @include icon;
                 border: 0;
 
                 .label {
@@ -78,22 +77,6 @@ ul {
         }
 
         &.pagination {
-            .next {
-                @include icon('', after);
-
-                &:after {
-                    content: '\f054';
-                }
-            }
-
-            .previous {
-                @include icon('', before);
-
-                &:before {
-                    content: '\f053';
-                }
-            }
-
             @include breakpoint(large) {
                 text-align: center;
 

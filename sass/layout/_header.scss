@@ -103,13 +103,12 @@ body {
                 }
 
                 > a {
-                    @include icon;
                     border-bottom: 0;
                     color: _palette(fg-light);
                     overflow: hidden;
                     position: relative;
-                    text-indent: 4em;
                     width: 4em;
+                    text-align: center;
 
                     &:before {
                         display: block;
