@@ -1,3 +1,2 @@
 static/js/icons.js  filter=crypt diff=crypt linguist-vendored
-static/js/companies.js  filter=crypt diff=crypt linguist-vendored
-static/js/theme.js  filter=crypt diff=crypt linguist-vendored
+static/js/outlines.js  filter=crypt diff=crypt linguist-vendored
