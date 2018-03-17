@@ -190,18 +190,12 @@ hr {
 figure {
     text-align: center;
     padding-bottom: 0.5em;
-    overflow-x: scroll;
+    display: block;
+    margin: 0 0 _size(element-margin) 0;
+    width: 100%;
 
-    &.scaled {
-        width: 60%;
-        margin: 0 auto;
-
-        @include breakpoint(medium) {
-            width: 75%;
-        }
-        @include breakpoint(small) {
-            width: 90%;
-        }
+    img {
+        max-width: 100%;
     }
 }
 
