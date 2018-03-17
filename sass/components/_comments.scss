@@ -46,6 +46,9 @@
 .isso-comment > div.text-wrapper {
     display: block;
 }
+.author-highlight {
+    background: _palette(border-bg);
+}
 .isso-comment .isso-follow-up {
     padding-left: calc(7% + 20px);
 }
