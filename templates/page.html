@@ -32,11 +32,11 @@
                             {% for tag in page.tags %}
                             <li><a href="{{ get_taxonomy_url(kind="tag", name=tag) }}">{{ tag }}</a></li>
                             {% endfor %}
-                            <li><a href="#"><i class="fal fa-heart"></i> 28</a></li>
-                            <li><a href="#"><i class="fal fa-comments"></i> 128</a></li>
                         </ul>
                     </footer>
                 </article>
+
+                {% include "comments.html" %}
 
                 <ul class="actions pagination">
                     <li>
