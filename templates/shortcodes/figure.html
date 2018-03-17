@@ -1,8 +1,8 @@
+{% if scaled %}
+<figure class="scaled">
+{% else %}
 <figure>
-    {% if width %}
-    <img src="/images/{{ src }}" alt="{{ caption }}" width="{{ width }}" />
-    {% else %}
+{% endif %}
     <img src="/images/{{ src }}" alt="{{ caption }}" />
-    {% endif %}
     <figcaption>{{ caption }}</figcaption>
 </figure>

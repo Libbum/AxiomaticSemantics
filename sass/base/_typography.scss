@@ -190,6 +190,19 @@ hr {
 figure {
     text-align: center;
     padding-bottom: 0.5em;
+    overflow-x: scroll;
+
+    &.scaled {
+        width: 60%;
+        margin: 0 auto;
+
+        @include breakpoint(medium) {
+            width: 75%;
+        }
+        @include breakpoint(small) {
+            width: 90%;
+        }
+    }
 }
 
 figcaption {

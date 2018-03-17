@@ -15,9 +15,7 @@ var graticule = d3.geo.graticule();
 
 var title = d3.select("#countryName");
 
-var svg = d3.select("#map").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+var svg = d3.select("#map").append("svg").attr("viewBox", "0 0 500 500");
 
 svg.append("defs").append("path")
     .datum({type: "Sphere"})
@@ -47,9 +45,7 @@ var projection2 = d3.geo.orthographic()
 var path2 = d3.geo.path()
   .projection(projection2);
 
-var svg2 = d3.select("#map2").append("svg")
-  .attr("width", width)
-  .attr("height", height);
+var svg2 = d3.select("#map2").append("svg").attr("viewBox", "0 0 500 500");
 
 svg2.append("defs").append("path")
   .datum({type: "Sphere"})
