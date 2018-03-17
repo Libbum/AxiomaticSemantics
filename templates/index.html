@@ -15,9 +15,6 @@
           {% if page.extra.katex %}
             {% set_global load_katex = true %}
           {% endif %}
-          {% if page.extra.banner %}
-            <link rel="preload" as="image" href="/images/{{ page.extra.banner }}-banner.jpg" />
-          {% endif %}
         {% endfor %}
         {% if load_katex %}
           {% include "katex.html" %}
