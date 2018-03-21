@@ -129,7 +129,7 @@ function formatSearchResultItem(item, terms) {
 }
 
 function initSearch() {
-  var $searchInput = document.getElementById("search");
+    var $searchInput = document.getElementById("searchmenu");
   var $searchResults = document.querySelector(".search-results");
   var $searchResultsItems = document.querySelector(".search-results__items");
   var MAX_ITEMS = 10;
