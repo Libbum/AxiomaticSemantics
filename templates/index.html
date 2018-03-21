@@ -56,6 +56,15 @@
                 {% endfor %}
                 {% endblock content %}
 
+                <article class="post">
+                    <div class="search-container">
+                    <input id="search" type="search" placeholder="Search the docs">
+
+                    <div class="search-results">
+                        <div class="search-results__items"></div>
+                    </div>
+                </div>
+                </article>
                 <!-- Pagination -->
                 <ul class="actions pagination">
                     <li>
@@ -168,6 +177,9 @@
         </div>
 
         <script data-isso="/isso" src="/isso/js/count.min.js" async></script>
+        <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js", trailing_slash=false) }}"></script>
+        <script type="text/javascript" src="{{ get_url(path="search_index.en.js", trailing_slash=false) }}"></script>
+        <script type="text/javascript" src="{{ get_url(path="search.js", trailing_slash=false) }}"></script>
         <script src="/js/axiomatic.js"></script>
         {% if load_katex %}
         <script src="/js/math.js"></script>
