@@ -83,10 +83,6 @@ body {
         line-height: inherit;
         text-align: right;
 
-        .menu {
-            display: none;
-        }
-
         ul {
             height: inherit;
             line-height: inherit;
@@ -138,34 +134,9 @@ body {
         }
     }
 
-    #search {
-        @include vendor('transition', 'all 0.5s ease');
-        max-width: 0;
-        opacity: 0;
-        overflow: hidden;
-        padding: 0;
-        white-space: nowrap;
-
-        input {
-            width: 12em;
-        }
-
-        &.visible {
-            max-width: 12.5em;
-            opacity: 1;
-            padding: 0 0.5em 0 0;
-        }
-    }
-
     @include breakpoint(medium) {
         .links {
             display: none;
-        }
-
-        .main {
-            .menu {
-                display: inline-block;
-            }
         }
     }
 
@@ -175,12 +146,6 @@ body {
 
         h1 {
             padding: 0 0 0 1em;
-        }
-
-        .main {
-            .search {
-                display: none;
-            }
         }
     }
 }

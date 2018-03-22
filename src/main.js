@@ -34,6 +34,10 @@
                 '.important\\28 medium\\29',
                 skel.breakpoint('medium').active
             );
+            $('#header .main')
+                .find('[data-fa-i2svg]')
+                .toggleClass('fa-search')
+                .toggleClass('fa-bars');
         });
 
         // IE<=9: Reverse order of main and sidebar.
