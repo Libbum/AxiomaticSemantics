@@ -123,13 +123,20 @@ function makeTeaser(body, terms) {
 
 function formatSearchResultItem(item, terms) {
   return '<div class="search-results__item">'
-  + `<a href="${item.ref}">${item.doc.title}</a>`
-  + `<div>${makeTeaser(item.doc.body, terms)}</div>`
+  + '<a href="' + item.ref + '">' + item.doc.title + '</a>'
+  + '<div>' + makeTeaser(item.doc.body, terms) + '</div>'
   + '</div>';
 }
 
+//function formatSearchResultItem(item, terms) {
+//  return '<div class="search-results__item">'
+//  + `<a href="${item.ref}">${item.doc.title}</a>`
+//  + `<div>${makeTeaser(item.doc.body, terms)}</div>`
+//  + '</div>';
+//}
+
 function initSearch() {
-    var $searchInput = document.getElementById("searchmenu");
+  var $searchInput = document.getElementById("searchmenu");
   var $searchResults = document.querySelector(".search-results");
   var $searchResultsItems = document.querySelector(".search-results__items");
   var MAX_ITEMS = 10;

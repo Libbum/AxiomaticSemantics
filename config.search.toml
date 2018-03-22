@@ -2,13 +2,7 @@ title = "Axiomatic Semantics"
 description = "Brute force solutions with proofs by intimidation"
 base_url = "https://axiomatic.neophilus.net"
 
-compile_sass = true
-highlight_code = true
-highlight_theme = "charcoal"
-
-generate_rss = true
-generate_tags_pages = true
-generate_categories_pages = false
+build_search_index = true
 
 [extra.author]
 name = "Tim DuBois"
