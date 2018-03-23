@@ -36,6 +36,7 @@
     .links {
         list-style: none;
         padding: 0;
+        visibility: hidden;
 
         > li {
             border: 0;
@@ -81,6 +82,12 @@
     body.is-menu-visible & {
         @include vendor('transform', 'translateX(0)');
         visibility: visible;
+    }
+
+    @include breakpoint(medium) {
+        .links {
+            visibility: visible;
+        }
     }
 
     @include breakpoint(small) {

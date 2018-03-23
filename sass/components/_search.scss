@@ -1,0 +1,12 @@
+.search-results {
+  display: none;
+
+  &__items {
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 1em;
+    font-size: 0.9em;
+  }
+}
