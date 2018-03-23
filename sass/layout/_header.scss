@@ -83,6 +83,14 @@ body {
         line-height: inherit;
         text-align: right;
 
+        .wide {
+            display: block;
+        }
+
+        .narrow {
+            display: none;
+        }
+
         ul {
             height: inherit;
             line-height: inherit;
@@ -137,6 +145,15 @@ body {
     @include breakpoint(medium) {
         .links {
             display: none;
+        }
+        .main {
+            .wide {
+                display: none;
+            }
+
+            .narrow {
+                display: block;
+            }
         }
     }
 

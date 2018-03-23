@@ -34,15 +34,7 @@
                 '.important\\28 medium\\29',
                 skel.breakpoint('medium').active
             );
-            $('#header .main')
-                .find('[data-fa-i2svg]')
-                .toggleClass('fa-search')
-                .toggleClass('fa-bars');
         });
-
-        // IE<=9: Reverse order of main and sidebar.
-        if (skel.vars.IEVersion <= 9)
-            $main.insertAfter($sidebar);
 
         // Menu.
         $menu
@@ -56,44 +48,6 @@
                 side: 'right',
                 target: $body,
                 visibleClass: 'is-menu-visible'
-            });
-
-        // Search (header).
-        var $search = $('#search'),
-            $search_input = $search.find('input');
-
-        $body
-            .on('click', '[href="#search"]', function(event) {
-
-                event.preventDefault();
-
-                // Not visible?
-                if (!$search.hasClass('visible')) {
-
-                    // Reset form.
-                    $search[0].reset();
-
-                    // Show.
-                    $search.addClass('visible');
-
-                    // Focus input.
-                    $search_input.focus();
-
-                }
-
-            });
-
-        $search_input
-            .on('keydown', function(event) {
-
-                if (event.keyCode == 27)
-                    $search_input.blur();
-
-            })
-            .on('blur', function() {
-                window.setTimeout(function() {
-                    $search.removeClass('visible');
-                }, 100);
             });
 
         // Overwrite the default behaviour for abbreviations so we can style them.
