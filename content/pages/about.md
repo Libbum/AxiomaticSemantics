@@ -5,8 +5,9 @@ template = "about.html"
 +++
 
 <div class="bio">
-<img src="/images/steveandi.jpg" title="Steve and I (top) hanging out at his place in the Faroe Islands" />
-<center><a href="mailto:&#116;&#105;&#109;&#064;&#110;&#101;&#111;&#112;&#104;&#105;&#108;&#117;&#115;&#046;&#110;&#101;&#116;">&#116;&#105;&#109;&#064;&#110;&#101;&#111;&#112;&#104;&#105;&#108;&#117;&#115;&#046;&#110;&#101;&#116;</a>
+<img src="/images/steveandi.jpg" title="Steve and I (top)" />
+<center><i>Steve and I (top) hanging out at his place in Vágar, Faroe Islands</i><br />
+<a href="mailto:&#116;&#105;&#109;&#064;&#110;&#101;&#111;&#112;&#104;&#105;&#108;&#117;&#115;&#046;&#110;&#101;&#116;">&#116;&#105;&#109;&#064;&#110;&#101;&#111;&#112;&#104;&#105;&#108;&#117;&#115;&#046;&#110;&#101;&#116;</a>
     <a href="https://keybase.io/libbum/key.asc">C5D8A54F</a></center>
 </div>
 
