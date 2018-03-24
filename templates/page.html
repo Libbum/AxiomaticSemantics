@@ -38,6 +38,7 @@
 
                 {% include "comments.html" %}
 
+                <center>
                 <ul class="actions pagination">
                     <li>
                         {% if page.next %}
@@ -54,6 +55,7 @@
                         {% endif %}
                     </li>
                 </ul>
+                </center>
                 {% endblock content %}
 
                 {% include "footer.html" %}
