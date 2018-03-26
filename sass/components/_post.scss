@@ -29,12 +29,17 @@
         i {
             font-size: 0.8em;
             margin-bottom: 0.5em;
+            display: block;
         }
         img {
             padding: 5px;
             border: solid 1px #CCC;
             box-shadow: 1px 1px 5px #999;
             max-width: 100%;
+        }
+        .caption {
+            max-width: 412px;
+            text-align: center;
         }
     }
 
