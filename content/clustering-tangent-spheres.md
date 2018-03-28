@@ -18,7 +18,6 @@ Perfectly straightforward you think to yourself; since one can start with a trip
 </figure>
 
 <!-- more -->
-
 There's not even time to take a mirco-break to refresh your favourite time sink website before you've busted out the coordinates of \\(C\\)
 
 $$e = \frac{b^2+c^2-a^2}{2c}, \quad f= \sqrt{b^2-e^2}.$$

@@ -14,7 +14,6 @@ The performance comparison against [MathJax](https://www.mathjax.org/) was impre
 For those interested in seeing the difference first hand, [IntMath](http://www.intmath.com/cg5/katex-mathjax-comparison.php) has a decent test suite.
 
 <!-- more -->
-
 After looking under the hood though I could see my work was going to be cut out for me if I wanted to incorporate it into this blog.
 Unlike __MathJax__, which scanned the `document.body` and rendered math elements (indicated via `\[ ... \]` tags) on the fly, __KaTeX__ required the following syntax:
 

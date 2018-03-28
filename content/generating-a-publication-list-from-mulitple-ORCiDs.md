@@ -11,7 +11,6 @@ banner = "books"
 A website for my research group outside of the bounds of our abysmal university web restrictions has been discussed for quite some time. It's genesis has only really started recently though, because I've had too many other things on my plate and no-one else has any decent web capability. Whilst I'd much prefer to use a simple static site tool or code something completely from scratch, the other members of my team really need something a bit more point and click. Plus, I'll be leaving the group soon so it's in their best interest to have a well rounded CMS interface with which they can administer the site.
 
 <!-- more -->
-
 Looking around for the latest and greatest in CMS tools (I haven't worked with one since the very early versions of **e107** 15 years ago) we came across **Joomla**, which incidentally was pre-installed on the shared hosting we'd just purchased for the site, and started porting across content. Now that I'm familiar with the system I can undoubtedly state that building something from scratch and teaching everyone in the group how to code would have been a better choice.
 
 But I'm getting off topic&hellip;
