@@ -15,7 +15,6 @@ One particular stylistic choice that piqued my interest was the use of coloured 
 There _colortbl_ package (available on [CTAN](http://www.ctan.org/tex-archive/macros/latex/contrib/colortbl/)), with albeit hideous examples, allows for the inclusion of colour into tables; usually to highlight cells, but with a bit of finesse can be persuaded to alter the rule colour also.
 
 <!-- more -->
-
 [Memoir](http://www.ctan.org/tex-archive/macros/latex/contrib/memoir) is by far the most comprehensive class I've come across that should be the default document choice for those wishing to typeset large and complex documents.
 Simply adding _colortbl_ into the preamble of ones document will allow access to the capability needed to obtain coloured table rules, but this is not the only option available.
 Memoir incorporates the extensions from [booktabs](http://www.ctan.org/tex-archive/macros/latex/contrib/booktabs), which provides much needed enhancements to the default table environment.

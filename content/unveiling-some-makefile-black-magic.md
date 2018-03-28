@@ -13,7 +13,6 @@ Whilst my higher education started off in the computer science realm, I quickly 
 Ultimately though, my __c++__ programs never needed to link to external libraries or worry about machine specific configurations the `-o` switch was the only one I needed when calling `gcc` pretty much. Now I'm building <abbr title="Message Passing Interface">MPI</abbr> tools to run on supercomputing clusters that need the highly optimised linear algebra routines; written down by our forefathers in a more civilised age.
 
 <!-- more -->
-
 I need a Makefile, the file filled with dark arts known only to those with neck beards and ghostly white skin.
 
 Realistically, Makefiles are relatively simple things, but seem to have a stigma associated with them if you're outside the computer science sphere. In fact; here's a quote from my PhD supervisor when I told him about my knowledge gain concerning this post:

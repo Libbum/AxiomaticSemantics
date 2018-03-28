@@ -32,7 +32,6 @@ struct Bar {
 ```
 
 <!-- more -->
-
 This is a problem I came up against when writing the comment <abbr title="Application Program Interface">API</abbr> for [Oration](https://github.com/Libbum/oration).
 Each comment is inserted into the database without too much hassle.
 We know the parent `id`, since the frontend forwards us that information, and the unique primary key is simply auto-incremented.
