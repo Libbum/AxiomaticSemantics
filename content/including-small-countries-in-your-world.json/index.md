@@ -19,7 +19,6 @@ and then move on with their lives.
 But what if you care about information on this projection? What if Mike Bostock's [World Tour](http://bl.ocks.org/mbostock/4183330) gave you this grandiose idea of an interactive globe for your website that needs to pinpoint tiny countries like Singapore?
 
 <!-- more -->
-
 Singapore and other small countries like it are not included in the main 1:110m scale data as they are not large enough to be polytopes. Instead, they are relegated to `ne_110m_admin_0_tiny_countries` as point information and usually omitted from D3 1:110m globe implementations.
 
 Including this data set adds a small amount of complexity to the build and a bit of finessing of the finished product, but nothing over the top. I'll assume you have TopoJSON setup already and know how to use it. If not, checkout [Let's Make A Map](https://bost.ocks.org/mike/map/) for a good overview. For the lazy ones you can grab the end result of the following steps from [here](world.json).

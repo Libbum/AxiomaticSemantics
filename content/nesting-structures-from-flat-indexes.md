@@ -134,7 +134,7 @@ let tree: Vec<_> = top_level_ids
 ```
 
 The `build_tree` function is the recursive core of the problem.
-The implementation first (again) calls the recursive map for all comments and collects direct children at this level into a vector. 
+The implementation first (again) calls the recursive map for all comments and collects direct children at this level into a vector.
 The `::new` constructor on `NestedComment` is passed this populated list of children, building the complete struct for the given top-level `id`.
 If the child vector is empty, we know the current comment has no replies, and we can therefore pass an empty vector to the `NestedComment` constructor.
 
