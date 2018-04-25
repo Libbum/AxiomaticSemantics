@@ -14,13 +14,6 @@ template = "papers.html"
     <span class="pub-links">[<button id="tddelocal" class="abstractlink">Abstract</button>, <a href="http://arxiv.org/pdf/1508.05204.pdf">PDF</a>]</span>
     <div id="1508.05204" class="abstract">Environmental two-level systems (TLS) have been identified as significant decoherence sources in Josephson junction (JJ) based circuits. For such quantum devices to be functional, the removal or control of the TLS is a necessity. Understanding the microscopic origins of the 'strongly coupled' TLS type is one current path of investigation to that end. The delocalized oxygen model suggests the atomic position of an oxygen atom is spatially delocalized in the oxide forming the JJ barrier. In this report we extend this model from its previous 2+1D construction to a complete 3D description using a Wick-rotated time-dependent Schrodinger equation to solve for time-independent solutions in three dimensions. We compute experimentally observable parameters for phase qubits and compare the results to the 2+1D framework. We devise a Voronoi classification scheme to investigate oxygen atoms delocalizing within strained and non-strained crystalline lattices, as well as realistic atomic positions a JJ amorphous tunnel barrier constructed in previous density functional studies.</div>
   </li>
-  <li class="pub-item">
-    <div class="pub-title">Proton acceleration by a pair of successive ultraintense femtosecond laser pulses</div>
-    <div class="pub-authors">Julien Ferri, Lovisa Senje, Malay Dalui, Kristoffer Svensson, Bastian Aurand, Martin Hansson, Anders Persson, Olle Lundh, Claes-Göran Wahlström, Laurent Gremillet, Evangelos Siminos, Timothy C. DuBois, Longqing Yi, Joana Martins anq Tünde Fülöp</div>
-    <div class="pub-details"><a href="http://arxiv.org/abs/1802.06999"><span class="pub-journal">arXiv</span> 1802.06999</a> <i>(Accepted in <a href="https://aip.scitation.org/journal/php">Physics of Plasmas</a>)</i></div>
-    <span class="pub-links">[<button id="splitpulse" class="abstractlink">Abstract</button>, <a href="http://arxiv.org/pdf/1802.06999.pdf">PDF</a>]</span>
-    <div id="1802.06999" class="abstract">We investigate the target normal sheath acceleration of protons in thin aluminum targets irradiated at relativistic intensity by two time-separated ultrashort (35 fs) laser pulses. For identical laser pulses and target thicknesses of 3 and 6 μm, we observe experimentally that the second pulse boosts the maximum energy and charge of the proton beam produced by the first pulse for time delays below ∼0.6−1 ps. By using two-dimensional particle-in-cell simulations we examine the variation of the proton energy spectra with respect to the time-delay between the two pulses. We demonstrate that the expansion of the target front surface caused by the first pulse significantly enhances the hot-electron generation by the second pulse arriving after a few hundreds of fs time delay. This enhancement, however, does not suffice to further accelerate the fastest protons driven by the first pulse once three-dimensional quenching effects have set in. This implies a limit to the maximum time delay that leads to proton energy enhancement, which we theoretically determine.</div>
-  </li>
 </ul>
 
 
@@ -28,6 +21,13 @@ template = "papers.html"
 ## Journal Articles
 
 <ul class="alt">
+  <li class="pub-item">
+    <div class="pub-title">Proton acceleration by a pair of successive ultraintense femtosecond laser pulses</div>
+    <div class="pub-authors">Julien Ferri, Lovisa Senje, Malay Dalui, Kristoffer Svensson, Bastian Aurand, Martin Hansson, Anders Persson, Olle Lundh, Claes-Göran Wahlström, Laurent Gremillet, Evangelos Siminos, Timothy C. DuBois, Longqing Yi, Joana Martins and Tünde Fülöp</div>
+    <div class="pub-details"><a href="http://doi.org/10.1063/1.5026391"><span class="pub-journal">Physics of Plasmas</span> <span class="pub-vol">25</span> 043115 (2018)</a> </div>
+    <span class="pub-links">[<button id="pop2018" class="abstractlink">Abstract</button>, <a href="https://aip.scitation.org/doi/pdf/10.1063/1.5026391">PDF</a>]</span>
+    <div id="10.1063/1.5026391" class="abstract">We investigate the target normal sheath acceleration of protons in thin aluminum targets irradiated at relativistic intensity by two time-separated ultrashort (35 fs) laser pulses. For identical laser pulses and target thicknesses of 3 and 6 μm, we observe experimentally that the second pulse boosts the maximum energy and charge of the proton beam produced by the first pulse for time delays below ∼0.6−1 ps. By using two-dimensional particle-in-cell simulations we examine the variation of the proton energy spectra with respect to the time-delay between the two pulses. We demonstrate that the expansion of the target front surface caused by the first pulse significantly enhances the hot-electron generation by the second pulse arriving after a few hundreds of fs time delay. This enhancement, however, does not suffice to further accelerate the fastest protons driven by the first pulse once three-dimensional quenching effects have set in. This implies a limit to the maximum time delay that leads to proton energy enhancement, which we theoretically determine.</div>
+  </li>
   <li class="pub-item">
         <div class="pub-title">Origins of plateau formation in ion energy spectra under target normal sheath acceleration</div>
         <div class="pub-authors">Timothy C. DuBois, Evangelos Siminos, Julien Ferri, Laurent Gremillet and Tünde Fülöp</div>
