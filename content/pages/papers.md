@@ -8,6 +8,13 @@ template = "papers.html"
 
 <ul class="alt">
   <li class="pub-item">
+    <div class="pub-title">Generalized collision operator for fast electrons interacting with partially ionized impurities</div>
+    <div class="pub-authors">Linnea Hesslow, Ola Embréus, Mathias Hoppe, Timothy C. DuBois, Gergely Papp, Martin Rahm, Tünde Fülöp</div>
+    <div class="pub-details"><a href="http://arxiv.org/abs/1807.05036"><span class="pub-journal">arXiv</span> 1807.05036</a></div>
+    <span class="pub-links">[<button id="collision" class="abstractlink">Abstract</button>, <a href="https://arxiv.org/pdf/1807.05036">PDF</a>]</span>
+    <div id="1807.05036" class="abstract">Accurate modelling of the interaction between fast electrons and partially ionized atoms is important for evaluating tokamak disruption mitigation schemes based on material injection. This requires accounting for the effect of screening of the impurity nuclei by the cloud of bound electrons. In this paper, we detail the derivation of a generalized collision operator including the effect of partial screening. We calculate the effective ion length-scales, which are needed in the components of the collision operator, for a number of ion species commonly appearing in fusion experiments. We show that for high electric fields, the secondary runaway growth rate can be substantially larger than in a fully ionized plasma with the same effective charge, although the growth rate is significantly reduced at near-critical electric fields. Furthermore, by comparison with the Boltzmann collision operator, we show that the Fokker&ndash;Planck formalism is valid even for large impurity content.</div>
+  </li>
+  <li class="pub-item">
     <div class="pub-title">A 3D investigation of delocalised oxygen two-level defects in Josephson junctions</div>
     <div class="pub-authors">Timothy C. DuBois, Salvy P. Russo, Jared H. Cole</div>
     <div class="pub-details"><a href="http://arxiv.org/abs/1508.05204"><span class="pub-journal">arXiv</span> 1508.05204</a></div>
