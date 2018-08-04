@@ -1,9 +1,10 @@
 +++
 title = "Using KaTeX with Hakyll"
 description = "Lightning fast math rendering on the off-chance I ever get around to posting some maths."
-tags = ["LaTeX", "Haskell", "JavaScript"]
 date = 2015-08-06
 aliases = ["/posts/2015-08-06-using-katex-with-hakyll.html"]
+[taxonomies]
+tags = ["LaTeX", "Haskell", "JavaScript"]
 [extra]
 katex = true
 banner = "blackboard"

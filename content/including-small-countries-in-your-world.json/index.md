@@ -1,9 +1,10 @@
 +++
 title = "Including Small Countries in Your world.json"
 description = "The little guy is often the most important."
-tags = ["JavaScript", "D3.js"]
 date = 2016-04-18
 aliases = ["/posts/2016-04-18-including-small-countries-in-your-world.json.html"]
+[taxonomies]
+tags = ["JavaScript", "D3.js"]
 [extra]
 banner = "world"
 +++

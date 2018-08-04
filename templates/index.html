@@ -46,8 +46,8 @@
                             <li><a href="{{ page.permalink }}#continue-reading" class="button big">Continue Reading</a></li>
                         </ul>
                         <ul class="stats">
-                            {% for tag in page.tags %}
-                            <li><a href="{{ get_taxonomy_url(kind="tag", name=tag) }}">{{ tag }}</a></li>
+                            {% for tag in page.taxonomies.tags %}
+                            <li><a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">{{ tag }}</a></li>
                             {% endfor %}
                             <li><a href="{{ page.permalink }}#isso-thread"><i class="fao fa-comments"></i> 0</a></li>
                         </ul>

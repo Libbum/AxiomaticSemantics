@@ -1,8 +1,9 @@
 +++
 title = "Accessing partially recursive data structures in Elm"
 description = "A comment on commenting systems, implementation discussion for your discussions on implementations."
-tags = ["Elm", "Algorithms"]
 date = 2018-03-29
+[taxonomies]
+tags = ["Elm", "Algorithms"]
 [extra]
 banner = "forest"
 +++

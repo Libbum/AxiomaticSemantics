@@ -1,9 +1,10 @@
 +++
 title = "Converting 4K Content for Samsung UHD Televisions"
 description = "That is, until the Samsung firmware actually supports their own containers..."
-tags = ["Video", "4K"]
 date = 2014-11-22
 aliases = ["/posts/2014-11-22-converting-4k-content-for-samsung-uhd-televisions.html"]
+[taxonomies]
+tags = ["Video", "4K"]
 [extra]
 banner = "hdr"
 +++

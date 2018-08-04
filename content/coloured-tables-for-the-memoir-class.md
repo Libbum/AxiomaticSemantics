@@ -1,9 +1,10 @@
 +++
 title = "Coloured Tables for the Memoir Class"
 description = "So long as that colour isn't yellow. I hate yellow."
-tags = ["LaTeX"]
 date = 2014-11-16
 aliases = ["/posts/2014-11-16-coloured-tables-for-the-memoir-class.html"]
+[taxonomies]
+tags = ["LaTeX"]
 [extra]
 banner = "type"
 +++

@@ -1,9 +1,10 @@
 +++
 title = "Clustering Tangent Spheres"
 description = "Make yourself a little nest of eggs. Where your eggs are perfectly round and magically float in free space."
-tags = ["Geometry"]
 date = 2018-01-16
 aliases = ["/posts/2018-01-16-clustering-tangent-spheres.html"]
+[taxonomies]
+tags = ["Geometry"]
 [extra]
 katex = true
 banner = "bubbles"

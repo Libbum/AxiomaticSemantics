@@ -2,8 +2,9 @@
 title = "Using datatool and TikZ to generate figures from data"
 description = "Or just use print screen and MS Paint, you know, what ever is easiest..."
 date = 2013-03-16
-tags = ["LaTeX", "TikZ"]
 aliases = ["/posts/2013-03-16-using-datatool-and-tikz-to-generate-figures-from-data.html"]
+[taxonomies]
+tags = ["LaTeX", "TikZ"]
 [extra]
 banner = "paper"
 +++

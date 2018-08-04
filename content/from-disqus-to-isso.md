@@ -1,9 +1,10 @@
 +++
 title = "From Disqus to Isso"
 description = "Current comment security is a sad state of affairs."
-tags = ["JavaScript", "Security"]
 date = 2017-04-16
 aliases = ["/posts/2017-04-16-from-disqus-to-isso.html"]
+[taxonomies]
+tags = ["JavaScript", "Security"]
 [extra]
 banner = "timepc"
 +++

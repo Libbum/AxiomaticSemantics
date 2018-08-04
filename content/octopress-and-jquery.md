@@ -2,8 +2,9 @@
 title = "Octopress and jQuery"
 description = "It's always the little things that take hours to figure out."
 date = 2013-03-11
-tags = ["Octopress", "jQuery"]
 aliases = ["/posts/2013-03-11-octopress-and-jquery.html"]
+[taxonomies]
+tags = ["Octopress", "jQuery"]
 [extra]
 banner = "jquery"
 +++

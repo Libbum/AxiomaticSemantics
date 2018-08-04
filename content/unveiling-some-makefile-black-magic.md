@@ -2,8 +2,9 @@
 title = "Unveiling some Makefile Black Magic"
 description = "Go back to the shadows."
 date = 2013-03-28
-tags = ["C++", "make"]
 aliases = ["/posts/2013-03-28-unveiling-some-makefile-black-magic.html"]
+[taxonomies]
+tags = ["C++", "make"]
 [extra]
 banner = "lantern"
 +++

@@ -2,10 +2,10 @@
 
 {% block content %}
 <article class="post">
-    <h2>Posts tagged with {{ tag.name }}</h2>
+    <h2>Posts tagged with {{ term.name }}</h2>
     <table>
         <tbody>
-        {% for page in tag.pages %}
+        {% for page in term.pages %}
             <tr>
                 <td><time datetime="{{ page.date }}">{{ page.date | date(format="%B %e, %Y") }}</time></td>
                 <td><a href="{{ page.permalink }}">{{ page.title }}</a></td>

@@ -1,9 +1,10 @@
 +++
 title = "Easy Matlabpool Configuration"
 description = "Dive in without caring how deep it is."
-tags = ["Matlab"]
 date = 2014-11-13
 aliases = ["/posts/2014-11-13-Easy-Matlabpool-Configuration.html"]
+[taxonomies]
+tags = ["Matlab"]
 [extra]
 banner = "bokeh"
 +++

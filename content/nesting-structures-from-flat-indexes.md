@@ -1,8 +1,9 @@
 +++
 title = "Nesting Structures from Flat Indexes"
 description = "I don't always use recursion; but when I do, I don't always use recursion."
-tags = ["Rust", "Algorithms"]
 date = 2018-03-24
+[taxonomies]
+tags = ["Rust", "Algorithms"]
 [extra]
 banner = "shottower"
 +++

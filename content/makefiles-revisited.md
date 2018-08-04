@@ -1,9 +1,10 @@
 +++
 title = "Makefiles Revisited"
 description = "The rabbit hole keeps getting deeper and deeper. But I like what they've done with the place..."
-tags = ["make", "LaTeX"]
 date = 2015-04-09
 aliases = ["/posts/2015-04-09-makefiles-revisited.html"]
+[taxonomies]
+tags = ["make", "LaTeX"]
 [extra]
 banner = "workbench"
 +++

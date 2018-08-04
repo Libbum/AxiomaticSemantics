@@ -1,9 +1,10 @@
 +++
 title = "Code Coverage in Rust"
 description = "Productivity tools you employ to make yourself more efficient that actually take up most of your productive time."
-tags = ["Rust"]
 date = 2017-06-19
 aliases = ["/posts/2017-06-19-code-coverage-in-rust.html"]
+[taxonomies]
+tags = ["Rust"]
 [extra]
 banner = "control"
 +++

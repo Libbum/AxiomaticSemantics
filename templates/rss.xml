@@ -36,7 +36,7 @@
                 <guid>{{ page.permalink }}</guid>
                 <enclosure url="{{ config.base_url }}/images/{{ page.extra.banner }}-banner.jpg" length="0" type="image/jpeg"/>
                 <dc:creator>{{ config.extra.author.name }}</dc:creator>
-                {% for tag in page.tags %}
+                {% for tag in page.taxonomies.tags %}
                     <category>{{ tag }}</category>
                 {% endfor %}
             </item>

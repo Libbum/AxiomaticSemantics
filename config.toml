@@ -7,8 +7,10 @@ highlight_code = true
 highlight_theme = "charcoal"
 
 generate_rss = true
-generate_tags_pages = true
-generate_categories_pages = false
+
+taxonomies = [
+    {name = "tags"},
+]
 
 [extra.author]
 name = "Tim DuBois"

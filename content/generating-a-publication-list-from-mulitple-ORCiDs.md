@@ -1,9 +1,10 @@
 +++
 title = "Generating a Publication List From Mulitple ORCiDs"
 description = "AKA getting your professors to manage their own bloody lists so you don't have to."
-tags = ["php", "tcqp"]
 date = 2015-05-23
 aliases = ["/posts/2015-05-23-generating-a-publication-list-from-mulitple-ORCiDs.html"]
+[taxonomies]
+tags = ["php", "tcqp"]
 [extra]
 banner = "books"
 +++
