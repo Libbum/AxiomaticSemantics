@@ -41,15 +41,15 @@
                 <center>
                 <ul class="actions pagination">
                     <li>
-                        {% if page.next %}
-                        <a href="{{ page.next.permalink }}" class="button big"><i class="fao fa-chevron-double-left"></i> Newer Post</a>
+                        {% if page.later %}
+                        <a href="{{ page.later.permalink }}" class="button big"><i class="fao fa-chevron-double-left"></i> Newer Post</a>
                         {% else %}
                         <a href="#" class="disabled button big">Newest Post</a>
                         {% endif %}
                     </li>
                     <li>
-                        {% if page.previous %}
-                        <a href="{{ page.previous.permalink }}" class="button big">Older Post <i class="fao fa-chevron-double-right"></i></a>
+                        {% if page.earlier %}
+                        <a href="{{ page.earlier.permalink }}" class="button big">Older Post <i class="fao fa-chevron-double-right"></i></a>
                         {% else %}
                         <a href="#" class="disabled button big">Oldest Post</a>
                         {% endif %}
