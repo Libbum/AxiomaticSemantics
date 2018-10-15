@@ -2,9 +2,9 @@
     <div class="pub-title">{{ title | safe }}</div>
     <div class="pub-authors">{{ authors }}</div>
     {% if doi %}
-    <div class="pub-details"><a href="http://doi.org/{{ doi }}"><span class="pub-journal">{{ journal }}</span> <span class="pub-vol">{{ vol }}</span> {{ pages | safe }} ({{ year }})</a> </div>
+    <div class="pub-details"><a href="http://doi.org/{{ doi }}"><span class="pub-journal">{{ journal }}</span> <span class="pub-vol">{{ vol }}</span> {{ pages | safe }} ({{ year }})</a></div>
     {% elif arxiv %}
-    <div class="pub-details"><a href="http://arxiv.org/abs/{{ arxiv }}"><span class="pub-journal">arXiv</span> {{ arxiv }}</a> </div>
+   <div class="pub-details"><a href="http://arxiv.org/abs/{{ arxiv }}"><span class="pub-journal">arXiv</span> {{ arxiv }}</a> {% if accepted %}(Accepted at <i>{{ accepted }}</i>){% endif %}</div>
     {% elif thesis %}
     <div class="pub-details">{% if thesis=="phd" %}Doctor of Philosophy (Physics){% elif thesis=="honours" %}Bachelor of Science (Applied Sciences) (Honours){% elif thesis=="undergrad" %}Bachelor of Science (Physics){% endif %}, <span class="pub-journal">RMIT University</span> ({{ year }})</div>
     {% endif %}
