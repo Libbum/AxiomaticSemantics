@@ -5,7 +5,7 @@ AXTARGETS := src/jquery.min.js src/skel.min.js src/util.js src/main.js src/searc
 .PHONY: clean rebuild deploy js
 
 search:
-	gutenberg -c config.search.toml build
+	zola -c config.search.toml build
 	mv public/elasticlunr.min.js src
 	mv public/search_index.en.js src
 
@@ -18,12 +18,12 @@ static/js/abstract.js: src/abstract.js
 js: $(JSTARGETS)
 
 build: $(JSTARGETS)
-	gutenberg build
+	zola build
 
 rebuild: clean search build
 
 serve: $(JSTARGETS)
-	gutenberg serve
+	zola serve
 
 deploy: search build
 	rsync -avr --chown=www-data:www-data --checksum --exclude 'keybase.txt' --delete -e ssh public/ AkashaR:axiomatic/
