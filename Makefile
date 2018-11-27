@@ -12,6 +12,9 @@ search:
 static/js/axiomatic.js: $(AXTARGETS) $(SEARCHTARGETS)
 	uglifyjs --compress --mangle -o static/js/axiomatic.js src/jquery.min.js src/skel.min.js src/util.js src/main.js src/elasticlunr.min.js src/search.js src/search_index.en.js
 
+src/abstract.js:
+	node src/build_abstract.js
+
 static/js/abstract.js: src/abstract.js
 	uglifyjs --compress --mangle -o static/js/abstract.js src/abstract.js
 
