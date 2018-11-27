@@ -3,10 +3,12 @@
 {% macro authors(list) %}
 {% set authors = "" %}
 {% for name in list %}
-    {% if authors %}
-        {% set prev = authors ~ ", " %}
-    {% else %}
+    {% if loop.first %}
         {% set prev = authors %}
+    {% elif loop.last %}
+        {% set prev = authors ~ " and " %}
+    {% else %}
+        {% set prev = authors ~ ", " %}
     {% endif %}
     {% set_global authors = prev ~ name.given ~ " " ~ name.family %}
 {% endfor %}
