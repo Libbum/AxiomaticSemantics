@@ -1,9 +1,85 @@
 {% extends "page.html" %}
 
+{% macro authors(list) %}
+{% set authors = "" %}
+{% for name in list %}
+    {% if loop.first %}
+        {% set prev = authors %}
+    {% elif loop.last %}
+        {% set prev = authors ~ " and " %}
+    {% else %}
+        {% set prev = authors ~ ", " %}
+    {% endif %}
+    {% set_global authors = prev ~ name.given ~ " " ~ name.family %}
+{% endfor %}
+{{ authors }}
+{% endmacro authors %}
+
 {% block content %}
 <article class="post">
-    {{ page.content | safe }}
+    {% set pubs = load_data(path="../src/publications.json") %}
+    <h2>Pre-prints</h2>
+    <ul class="alt">
+    {% for publication in pubs | filter(attribute="type", value="article") | sort(attribute="sort") | reverse %}
+        <li class="pub-item">
+            <div class="pub-title">{{ publication.title | safe }}</div>
+            <div class="pub-authors">{{ self::authors(list=publication.author) }}</div>
+            <div class="pub-details"><a href="{{ publication.URL }}"><span class="pub-journal">{{ publication.source }}</span> {{ publication.publisher }}</a></div>
+            <p><span class="pub-links">[<button id="{{ publication.id }}" class="abstractlink">Abstract</button>, <a href="https://arxiv.org/pdf/{{ publication.publisher }}">PDF</a>]</span></p>
+            <div id="{{ publication.publisher }}" class="abstract">{{ publication.abstract | safe }}</div>
+        </li>
+    {% endfor %}
+    </ul>
+    <h2>Journal Articles</h2>
+    <ul class="alt">
+    {% for publication in pubs | filter(attribute="type", value="article-journal") | sort(attribute="sort") | reverse %}
+        <li class="pub-item">
+            <div class="pub-title">{{ publication.title | safe }}</div>
+            <div class="pub-authors">{{ self::authors(list=publication.author) }}</div>
+            <div class="pub-details"><a href="https://doi.org/{{ publication.DOI }}"><span class="pub-journal">{{ publication["container-title"] }}</span> <span class="pub-vol">{{ publication.volume }}</span> {{ publication.page }} ({{ publication.issued["date-parts"].0.0 }})</a></div>
+            <p><span class="pub-links">[<button id="{{ publication.id }}" class="abstractlink">Abstract</button>, <a href="{{ publication.URL }}">PDF</a>]</span></p>
+            <div id="{{ publication.DOI }}" class="abstract">{{ publication.abstract | safe }}</div>
+        </li>
+    {% endfor %}
+    </ul>
+    <h2>Theses</h2>
+    <ul class="alt">
+        <li class="pub-item">
+            <div class="pub-title">On a Delocalised Oxygen Model of Two-Level System Defects in Josephson Junctions</div>
+            <div class="pub-authors">Timothy C. DuBois</div>
+            <div class="pub-details">Doctor of Philosophy (Physics), <span class="pub-journal">RMIT University</span> (2015)</div>
+            <p><span class="pub-links">[<button id="phda" class="abstractlink">Abstract</button>, <a href="/papers/DuBois, T.C, PhD Thesis, RMIT University (2015).pdf">PDF</a>]</span></p>
+            <div id="phd" class="abstract">
+Constructing circuits which invoke the tunnelling effect of Josephson junctions in the superconducting regime manifest controllable, quantum properties. The development of a quantum computer employing these phenomena is just one of the many advantages to be gained from building such devices.<br /><br />
+However, the use of quantum bits for computation is dependent on the ability to operate them in an essentially isolated environment. The phenomenon of decoherence refers to the instability of a quantum state of a system when it interacts with the surrounding environment. Superconducting qubits are sensitive to decoherence mechanisms within the readout leads connecting to the device, and more importantly from the materials from which they are manufactured. Removal or control of these imperfections is required before quantum computers using superconducting circuit architecture can be realised.<br /><br />
+One identifiable noise source is the so called 'strongly coupled' two-level system (TLS). Comparable resonance frequencies to the qubit; strong coupling strengths and decoherence times long enough to allow coherent oscillations between the qubit and TLS have been experimentally measured. The premise of this thesis is that positional anharmonicity of oxygen atoms arises within the AlO<sub>x</sub> barrier of the Josephson junction solely due to its amorphous construction. This ansatz allows the existence of various spatial configurations throughout the layer, causing unique TLS properties based solely on atomic positions and rotation in relation to the external electric field.<br /><br />
+To validate this conjecture, Josephson junction models are constructed using a hybrid <i>ab initio</i> and molecular mechanics approach, with various stoichiometry and density properties to reflect experimental observations of the barrier. The resultant atomic positions provide input conditions through a Voronoi classification scheme to a framework describing an oxygen atom that has the capacity to become spatially delocalised as bonds perturb away from a crystalline structure. A direct diagonalisation method is developed for low dimensional descriptions and a Wick-rotated time-dependent Schrödinger equation implementation is used for three dimensional investigations.<br /><br />
+Calculated properties are compared to many current experimental strongly coupled TLS measurements in phase qubits, which shows the models' capacity to explain how an oxygen atom can generate a large dipole and appropriate ground to first excited state splitting values expected of a TLS by merely migrating from its preferred lattice position.
+            </div>
+        </li>
+        <li class="pub-item">
+            <div class="pub-title">On Molecular and DFT Modelling of Titanium Defects in &alpha;-Quartz With a Focus on Properties Relevant to Geo-Thermometers</div>
+            <div class="pub-authors">Timothy C. DuBois</div>
+            <div class="pub-details">Bachelor of Science (Applied Sciences) (Honours), <span class="pub-journal">RMIT University</span> (2010)</div>
+            <p><span class="pub-links">[<button id="honoursa" class="abstractlink">Abstract</button>, <button id="honoursp" class="abstractlink">PDF</button>]</span></p>
+            <div id="honours" class="abstract">
+Geodynamic processes are extremely difficult to investigate with current technologies. Rheology in the lithosphere and asthenosphere is highly nonlinear and elasticity causes complications near the surface when the ambient temperature is less than approximately 600&deg;C. The current contention between Geologists and Geophysicists is that the Earth’s main geodynamic process is that of Mantle Convection; exerting plate tectonics to organise the system. Considering that plate tectonics is only a kinematic description of observations though, and not a fully dynamic description of plate motion, this and other approximations and assumptions continue to build upon one another yielding incomplete and inconsistent models. Geothermobarometry is the science of measuring temperature and pressure histories of intrusive igneous or metamorphic rock in an attempt to understand these processes in a limited fashion.<br /><br />
+The recent work complied on a Titanium-in-Quartz geothermometer by Wark &amp; Watson [Contrib. Mineral. Petrol. 152 (2006)] concluded with an empirical formula generated from the cathodoluminescence of a synthesised Quartz system in the presence of Rutile. The absence of a major pressure effect on the calibration is suggested, but could not be verified.<br /><br />
+Generation of an <i>ab initio</i> model of a Ti defect in a SiO<sub>2</sub> crystal was undertaken to assist in validating the Ti/Quartz relationship at pressure and temperature over ranges of 0&mdash;11 GPa and 0&mdash;1500 K respectively. A Molecular Mechanics model was also constructed due to issues pertaining to the construction of the former. An analysis and comparison of the two models conclude that the Titanium-in-Quartz defect investigated showed a pressure dependence of less than 0.2% over the pressure range.
+            </div>
+            <div id="honourspdf" class="abstract">It's pretty terrible. Contact me directly if you really want me to send you a copy.</div>
+        </li>
+        <li class="pub-item">
+            <div class="pub-title">Defect Formation Free Energy of Defects in Anatase</div>
+            <div class="pub-authors">Timothy C. DuBois</div>
+            <div class="pub-details">Bachelor of Science (Physics), <span class="pub-journal">RMIT University</span> (2009)</div>
+            <p><span class="pub-links">[<button id="undergrada" class="abstractlink">Abstract</button>, <button id="undergradp" class="abstractlink">PDF</button>]</span></p>
+            <div id="undergrad" class="abstract">
+Using Density Functional Theory, Lattice Dynamics and other modelling methods a theoretical 2x2x1 supercell of Anatase is defected: removing one Titanium atom and adding four Hydrogen atoms to bond to the Oxygen atoms at the defect site. The system is then probed to discover its properties. The Defect Formation Free Energy of the supercell is of particular interest to this experiment, as this property predicts that the defected lattice is thermodynamically stable across the calculated temperature range of 0K to 1000K. Individual atom contributions to the Free Energy raise some questions to the stability of the Hydrogen atoms, which suggests more calculations are required to verify the need for their introduction into the defect. All results await experimental verification.
+            </div>
+            <div id="undergradpdf" class="abstract">No way</div>
+        </li>
+    </ul>
 </article>
 <script src="/js/abstract.js"></script>
 {% endblock content %}
-
