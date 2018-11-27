@@ -17,7 +17,7 @@
 <article class="post">
     {% set pubs = load_data(path="../src/publications.json") %}
     <ul class="alt">
-    {% for publication in pubs | filter(attribute="type", value="article-journal") | sort(attribute="issued.date-parts") %}
+    {% for publication in pubs | filter(attribute="type", value="article-journal") | sort(attribute="sort") | reverse %}
         <li class="pub-item">
             <div class="pub-title">{{ publication.title | safe }}</div>
             <div class="pub-authors">{{ self::authors(list=publication.author) }}</div>
