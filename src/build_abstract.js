@@ -31,7 +31,13 @@ publications.forEach(function(pub) {
     `;
 });
 
-data += `}
+data += `document.getElementById('phda').onclick = function () { showAbstract('phd'); };
+    document.getElementById('honoursa').onclick = function () { showAbstract('honours'); };
+    document.getElementById('undergrada').onclick = function () { showAbstract('undergrad'); };
+
+    document.getElementById('honoursp').onclick = function () { showAbstract('honourspdf'); };
+    document.getElementById('undergradp').onclick = function () { showAbstract('undergradpdf'); };
+}
 `;
 
 fs.writeFile("src/abstract.js", data, function(err) {
