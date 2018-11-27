@@ -22,7 +22,12 @@ function ready() {
 `;
 
 publications.forEach(function(pub) {
-    data += `document.getElementById('${pub.id}').onclick = function () { showAbstract('${pub.DOI}'); };
+    if (pub.type == "article-journal") {
+        key = pub.DOI
+    } else {
+        key = pub.publisher
+    };
+    data += `document.getElementById('${pub.id}').onclick = function () { showAbstract('${key}'); };
     `;
 });
 

@@ -3,5 +3,6 @@ drafts
 static/papers
 src/search_index.en.js
 src/elasticlunr.min.js
+src/abstract.js
 static/js/axiomatic.js
 static/js/abstract.js

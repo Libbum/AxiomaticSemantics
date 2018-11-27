@@ -16,6 +16,19 @@
 {% block content %}
 <article class="post">
     {% set pubs = load_data(path="../src/publications.json") %}
+    <h2>Pre-prints</h2>
+    <ul class="alt">
+    {% for publication in pubs | filter(attribute="type", value="article") | sort(attribute="sort") | reverse %}
+        <li class="pub-item">
+            <div class="pub-title">{{ publication.title | safe }}</div>
+            <div class="pub-authors">{{ self::authors(list=publication.author) }}</div>
+            <div class="pub-details"><a href="{{ publication.URL }}"><span class="pub-journal">{{ publication.source }}</span> {{ publication.publisher }}</a></div>
+            <span class="pub-links">[<button id="{{ publication.id }}" class="abstractlink">Abstract</button>, <a href="https://arxiv.org/pdf/{{ publication.publisher }}">PDF</a>]</span>
+            <div id="{{ publication.publisher }}" class="abstract">{{ publication.abstract | safe }}</div>
+        </li>
+    {% endfor %}
+    </ul>
+    <h2>Journal Articles</h2>
     <ul class="alt">
     {% for publication in pubs | filter(attribute="type", value="article-journal") | sort(attribute="sort") | reverse %}
         <li class="pub-item">
