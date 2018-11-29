@@ -142,7 +142,26 @@ body {
         }
     }
 
-    @include breakpoint(medium) {
+    #search {
+        @include vendor('transition', 'all 0.5s ease');
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0;
+        white-space: nowrap;
+
+        input {
+            width: 12em;
+        }
+
+        &.visible {
+            max-width: 12.5em;
+            opacity: 1;
+            padding: 0 0.5em 0 0;
+        }
+    }
+
+    @include breakpoint('<=medium') {
         .links {
             display: none;
         }
@@ -157,12 +176,18 @@ body {
         }
     }
 
-    @include breakpoint(small) {
+    @include breakpoint('<=small') {
         height: 2.75em;
         line-height: 2.75em;
 
         h1 {
             padding: 0 0 0 1em;
+        }
+
+        .main {
+            .search {
+                display: none;
+            }
         }
     }
 }

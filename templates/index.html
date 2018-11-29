@@ -20,7 +20,7 @@
           {% include "katex.html" %}
         {% endif %}
     </head>
-    <body>
+    <body class="is-preload">
 
         <!-- Wrapper -->
         <div id="wrapper">
@@ -134,21 +134,11 @@
                 <!-- Posts List -->
                 <section>
                     <ul class="posts">
-                        <li>
-                            {{ macros::github(repo="spherical-cow", blurb="A high volume fraction sphere packing library", thumb="cowhead") }}
-                        </li>
-                        <li>
-                            {{ macros::github(repo="oration", blurb="A Rocket/Elm self hosted commenting system for static sites", thumb="oration") }}
-                        </li>
-                        <li>
-                            {{ macros::github(repo="Planck-Libbum", blurb="Custom layout for the Planck mechanical keyboard", thumb="planck") }}
-                        </li>
-                        <li>
-                            {{ macros::github(repo="Dice.jl", blurb="A collection of open source DICE and DICE-like models", thumb="pic11") }}
-                        </li>
-                        <li>
-                            {{ macros::github(repo="vim-apoklinon", blurb="A dark 256 colour scheme for Vim", thumb="apoklinon") }}
-                        </li>
+                        {{ macros::github(repo="spherical-cow", blurb="A high volume fraction sphere packing library", thumb="cowhead") }}
+                        {{ macros::github(repo="oration", blurb="A Rocket/Elm self hosted commenting system for static sites", thumb="oration") }}
+                        {{ macros::github(repo="Planck-Libbum", blurb="Custom layout for the Planck mechanical keyboard", thumb="planck") }}
+                        {{ macros::github(repo="Dice.jl", blurb="A collection of open source DICE and DICE-like models", thumb="pic11") }}
+                        {{ macros::github(repo="vim-apoklinon", blurb="A dark 256 colour scheme for Vim", thumb="apoklinon") }}
                     </ul>
                 </section>
 

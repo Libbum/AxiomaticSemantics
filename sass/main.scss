@@ -1,24 +1,23 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import 'libs/skel';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+@import 'libs/html-grid';
 
-@include skel-breakpoints((
-xlarge: '(max-width: 1680px)',
-large: '(max-width: 1280px)',
-medium: '(max-width: 980px)',
-small: '(max-width: 736px)',
-xsmall: '(max-width: 480px)'
-));
+// Breakpoints.
 
-@include skel-layout((
-reset: 'full',
-boxModel: 'border',
-grid: ( gutters: 1em )
+@include breakpoints((
+xlarge:   ( 1281px,  1680px ),
+large:    ( 981px,   1280px ),
+medium:   ( 737px,   980px  ),
+small:    ( 481px,   736px  ),
+xsmall:   ( null,    480px  )
 ));
 
 // Base.
 
+@import 'base/reset';
 @import 'base/page';
 @import 'base/typography';
 
@@ -32,9 +31,11 @@ grid: ( gutters: 1em )
 @import 'components/image';
 @import 'components/list';
 @import 'components/mini-post';
-@import 'components/post';
 @import 'components/paper';
+@import 'components/posts';
+@import 'components/post';
 @import 'components/reading';
+@import 'components/row';
 @import 'components/search';
 @import 'components/section';
 @import 'components/table';

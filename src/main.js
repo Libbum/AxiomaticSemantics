@@ -1,81 +1,89 @@
 (function($) {
 
-    skel.breakpoints({
-        xlarge:	'(max-width: 1680px)',
-        large:	'(max-width: 1280px)',
-        medium:	'(max-width: 980px)',
-        small:	'(max-width: 736px)',
-        xsmall:	'(max-width: 480px)'
+    var	$window = $(window),
+        $body = $('body'),
+        $menu = $('#menu'),
+        $sidebar = $('#sidebar'),
+        $main = $('#main');
+
+    // Breakpoints.
+    breakpoints({
+        xlarge:   [ '1281px',  '1680px' ],
+        large:    [ '981px',   '1280px' ],
+        medium:   [ '737px',   '980px'  ],
+        small:    [ '481px',   '736px'  ],
+        xsmall:   [ null,      '480px'  ]
     });
 
-    $(function() {
+    // Play initial animations on page load.
+    $window.on('load', function() {
+        window.setTimeout(function() {
+            $body.removeClass('is-preload');
+        }, 100);
+    });
 
-        var $window = $(window),
-            $body = $('body'),
-            $menu = $('#menu'),
-            $sidebar = $('#sidebar'),
-            $main = $('#main');
+    // Menu.
+    $menu
+        .appendTo($body)
+        .panel({
+            delay: 500,
+            hideOnClick: true,
+            hideOnSwipe: true,
+            resetScroll: true,
+            resetForms: true,
+            side: 'right',
+            target: $body,
+            visibleClass: 'is-menu-visible'
+        });
 
-        // Disable animations/transitions until the page has loaded.
-        $body.addClass('is-loading');
+    // Search (header).
+    var $search = $('#search'),
+        $search_input = $search.find('input');
 
-        $window.on('load', function() {
+    $body
+        .on('click', '[href="#search"]', function(event) {
+
+            event.preventDefault();
+
+            // Not visible?
+            if (!$search.hasClass('visible')) {
+
+                // Reset form.
+                $search[0].reset();
+
+                // Show.
+                $search.addClass('visible');
+
+                // Focus input.
+                $search_input.focus();
+
+            }
+
+        });
+
+    $search_input
+        .on('keydown', function(event) {
+
+            if (event.keyCode == 27)
+                $search_input.blur();
+
+        })
+        .on('blur', function() {
             window.setTimeout(function() {
-                $body.removeClass('is-loading');
+                $search.removeClass('visible');
             }, 100);
         });
 
-        // Fix: Placeholder polyfill.
-        $('form').placeholder();
+    // Intro.
+    var $intro = $('#intro');
 
-        // Prioritize "important" elements on medium.
-        skel.on('+medium -medium', function() {
-            $.prioritize(
-                '.important\\28 medium\\29',
-                skel.breakpoint('medium').active
-            );
-        });
+    // Move to main on <=large, back to sidebar on >large.
+    breakpoints.on('<=large', function() {
+        $intro.prependTo($main);
+    });
 
-        // Menu.
-        $menu
-            .appendTo($body)
-            .panel({
-                delay: 500,
-                hideOnClick: true,
-                hideOnEscape: true,
-                hideOnSwipe: true,
-                resetScroll: true,
-                resetForms: true,
-                side: 'right',
-                target: $body,
-                visibleClass: 'is-menu-visible'
-            });
-
-
-        $('form.search').on('submit', function(event) {
-            event.preventDefault();
-        });
-
-        // Overwrite the default behaviour for abbreviations so we can style them.
-        $('[title]').each( function() {
-            var abbr_title = $(this);
-            abbr_title.data('title',abbr_title.attr('title'));
-            abbr_title.attr('name', abbr_title.attr('title'));
-            abbr_title.removeAttr('title');
-        });
-
-        // Intro.
-        var $intro = $('#intro');
-
-        // Move to main on <=large, back to sidebar on >large.
-        skel
-            .on('+large', function() {
-                $intro.prependTo($main);
-            })
-            .on('-large', function() {
-                $intro.prependTo($sidebar);
-            });
-
+    breakpoints.on('>large', function() {
+        $intro.prependTo($sidebar);
     });
 
 })(jQuery);

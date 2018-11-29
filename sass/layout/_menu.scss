@@ -84,13 +84,13 @@
         visibility: visible;
     }
 
-    @include breakpoint(medium) {
+    @include breakpoint('<=medium') {
         .links {
             visibility: visible;
         }
     }
 
-    @include breakpoint(small) {
+    @include breakpoint('<=small') {
         > * {
             padding: _size(section-spacing-small);
         }

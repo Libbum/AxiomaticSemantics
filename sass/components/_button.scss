@@ -54,12 +54,10 @@ button,
     }
 
     &.fit {
-        display: block;
-        margin: 0 0 (_size(element-margin) * 0.5) 0;
         width: 100%;
     }
 
-    &.big {
+    &.large {
         font-size: 0.7em;
         padding: 0 3em;
     }

@@ -3,6 +3,7 @@
 #intro {
     .logo {
         border-bottom: 0;
+        display: inline-block;
         margin: 0 0 (_size(element-margin) * 0.5) 0;
         overflow: hidden;
         position: relative;
@@ -40,7 +41,7 @@
         }
     }
 
-    @include breakpoint(large) {
+    @include breakpoint('<=large') {
         margin: 0 0 _size(section-spacing) 0;
         text-align: center;
 
@@ -55,7 +56,7 @@
         }
     }
 
-    @include breakpoint(small) {
+    @include breakpoint('<=small') {
         margin: 0 0 _size(section-spacing-small) 0;
         padding: 1.25em 0;
 

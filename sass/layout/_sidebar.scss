@@ -17,11 +17,12 @@
         padding-top: 0;
     }
 
-    @include breakpoint(large) {
+    @include breakpoint('<=large') {
         border-top: solid 1px _palette(border);
         margin: _size(section-spacing) 0 0 0;
         min-width: 0;
         padding: _size(section-spacing) 0 0 0;
         width: 100%;
+        overflow-x: hidden;
     }
 }
