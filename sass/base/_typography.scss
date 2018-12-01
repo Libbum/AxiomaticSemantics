@@ -77,16 +77,6 @@ abbr {
         &:before {
             color: _palette(accent) !important;
         }
-
-        &:after {
-            position: absolute;
-            bottom: 100%;
-            display: inline-table;
-            padding: 0.25em;
-            content: attr(name);
-            color: _palette(bg);
-            background: _palette(accent) !important;
-        }
     }
 }
 
