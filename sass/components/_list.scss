@@ -77,7 +77,7 @@ ul {
         }
 
         &.pagination {
-            @include breakpoint(large) {
+            @include breakpoint('<=large') {
                 text-align: center;
 
                 .next, .previous {
@@ -85,7 +85,7 @@ ul {
                 }
             }
 
-            @include breakpoint(small) {
+            @include breakpoint('<=small') {
                 .next, .previous {
                     min-width: 18em;
                 }
@@ -149,7 +149,7 @@ ul {
             }
         }
 
-        @include breakpoint(xsmall) {
+        @include breakpoint('<=xsmall') {
             margin: 0 0 _size(element-margin) 0;
 
             li {

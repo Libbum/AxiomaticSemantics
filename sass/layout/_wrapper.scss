@@ -14,15 +14,15 @@
         opacity: 0.15;
     }
 
-    @include breakpoint(xlarge) {
+    @include breakpoint('<=xlarge') {
         padding: _size(section-spacing);
     }
 
-    @include breakpoint(large) {
+    @include breakpoint('<=large') {
         display: block;
     }
 
-    @include breakpoint(small) {
+    @include breakpoint('<=small') {
         padding: _size(section-spacing-small);
     }
 

@@ -7,3 +7,5 @@ src/abstract.js
 src/publications.json
 static/js/axiomatic.js
 static/js/abstract.js
+node_modules/
+package-lock.json

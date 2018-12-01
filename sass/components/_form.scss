@@ -53,6 +53,31 @@ textarea {
     }
 }
 
+select {
+    background-image: url(/images/formbg.svg);
+    background-size: 1.25rem;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1rem) center;
+    height: _size(element-height);
+    padding-right: _size(element-height);
+    text-overflow: ellipsis;
+
+    option {
+        color: _palette(fg-bold);
+        background: _palette(bg);
+    }
+
+    &:focus {
+        &::-ms-value {
+            background-color: transparent;
+        }
+    }
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -147,11 +172,6 @@ input[type="radio"] {
 }
 
 :-ms-input-placeholder {
-    color: _palette(fg-light) !important;
-    opacity: 1.0;
-}
-
-.formerize-placeholder {
     color: _palette(fg-light) !important;
     opacity: 1.0;
 }
