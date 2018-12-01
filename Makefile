@@ -23,12 +23,15 @@ js: $(JSTARGETS)
 build: $(JSTARGETS)
 	zola build
 
+css: build
+	node src/build_css.js
+
 rebuild: clean search build
 
 serve: $(JSTARGETS)
 	zola serve
 
-deploy: search build
+deploy: search css
 	rsync -avr --chown=www-data:www-data --checksum --exclude 'keybase.txt' --delete -e ssh public/ AkashaR:axiomatic/
 
 clean:
