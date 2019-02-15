@@ -104,7 +104,7 @@ As an example, heres a short discussion about some of my recent work using just 
 
 Wick rotations are primarily used to find solutions to Minkowski space problems by an Euclidean space mapping.
 We can also use the rotation to evolve a time-dependent Schrödinger equation and solve for time-independent solutions in three dimensions.
-To do so we transfer our TDSE into an imaginary time basis $t=i\tau$:
+To do so we transfer our TDSE into an imaginary time basis \\(t=i\tau\\):
 
 $$i \hbar \frac{\partial}{\partial t}\Psi(\vec{r},t) = H\Psi(\vec{r},t) \Rightarrow - \hbar \frac{\partial}{\partial \tau}\Psi(\vec{r},\tau) = H\Psi(\vec{r},\tau)$$
 
