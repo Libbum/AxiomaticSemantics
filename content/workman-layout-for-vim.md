@@ -12,6 +12,7 @@ banner = "typewriter"
 I've recently switched keyboard layouts from Dvorak to [Workman](http://www.workmanlayout.com/blog/). Dvorak has been good to me over the past 5 years or so, but the philosophy behind it wasn't actualised in it's final design. Workman has been optimised for English and minimises finger strain *etc etc*. There's no point rabbiting on about it as all of my praises or critiques are already well fleshed out on the Workman website.
 
 <!-- more -->
+
 It's been two weeks or so since the switch and I'm at the proficiency stage where I'm not yelling at the awkwardness of my inability to find a letter, but if the switch from Qwerty to Dvorak is any indication it'll be a couple of months until I'm completely up to speed.
 
 I had a fantastic Vim map for Dvorak suggested by [Adam Davis](http://stackoverflow.com/questions/165231/vim-dvorak-keybindings-rebindings), which kept the Qwerty _h,j,k,l_ navigation keys in the same place; remapping sane Dvorak keys with minimal disruption. So obviously something similar for Workman that didn't disrupt Vim flow is needed.

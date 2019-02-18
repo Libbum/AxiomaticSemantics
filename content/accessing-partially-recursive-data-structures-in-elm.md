@@ -15,6 +15,7 @@ In my [last post](/nesting-structures-from-flat-indexes/), I talked about genera
 Now, I'd like to continue the conversation at the frontend&mdash;hopefully answering the question: how do we invoke a recursive type and do some work with one?
 
 <!-- more -->
+
 Let's start out with a [less obvious but nicer](https://github.com/elm-lang/elm-compiler/blob/0.18.0/hints/recursive-alias.md#less-obvious-but-nicer) layout for our comments and replies:
 
 ```elm

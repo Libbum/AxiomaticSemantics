@@ -17,6 +17,7 @@ It may seem a little counter intuitive then, that I'm also trying at the same ti
 Proper documentation, testing, error handling, data structures *etc*.
 
 <!-- more -->
+
 The Rust tooling makes much of this a breeze.
 For example, you write comments above your functions in markdown, call `cargo doc` and a complete document is compiled for you.
 
