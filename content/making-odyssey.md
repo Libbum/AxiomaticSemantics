@@ -28,7 +28,7 @@ So assuming that this is all just magic for now&mdash;we can take a list of imag
 
 The algorithms in [elm-partition](https://package.elm-lang.org/packages/Libbum/elm-partition/latest/Partition) must choose speed over accuracy or *vice versa*.
 After testing a number of algorithms I found that I could get away with using what's known as a **greedy** method, with is considered the least accurate practical partitioner (by that I mean your could randomly partition and it'd certainly be faster, but perhaps no where near accurate).
-This is great since it only traverses the galleries' contents once before giving us a solution, thus allowing us to display the gallery super fast & giving is no detectable slowdown on low powered devices like smartphones.
+This is great since it only traverses the galleries' contents once before giving us a solution, thus allowing us to display the gallery super fast & giving us no detectable slowdown on low powered devices like smartphones.
 
 Here's how we get the gallery layout (stripped down a bit, so take a look on [Github](https://github.com/Libbum/Odyssey/blob/master/src/Main.elm) if you want the unabridged version):
 
@@ -196,6 +196,9 @@ For the moment, the globe is not native Elm, I'm porting out the drawing of that
 I've started work in remedying this situation: [elm-topojson](https://github.com/Libbum/elm-topojson) is a functioning TopoJSON parser.
 There's a lot of work to do to build `d3-geo` functionality into Elm, so I didn't want Odyssey to depend on this extension.
 I'm collaborating with a few people in the Elm community on getting this done, but the process will probably be quite slow since we want to design the API right.
+
+This is the oldest portion of the project, since it was salvaged from an earlier version of my gallery.
+An earlier post gives you some insight on [how to construct a world.json](./including-small-countries-in-your-world.json/index.md).
 
 ## Automating the build process
 
