@@ -17,6 +17,6 @@ I obtained my doctorate at RMIT University in Melbourne, Australia in September 
 
 Lazarus Long, a character is Robert Heinlein's *Time Enough for Love* stated that "Specialization is for insects"&mdash;a sentiment which I tend to embrace, with qualifications and academic training in Ancient Languages, Philosophy, Electronics, Ecology, and Computer Science along side Physics.
 
-Outside of academic pursuits; my interests include [travelling](https://odyssey.neophilus.net), rock climbing, trampoline gymnastics, vertical farming & areoponics, [building multirotor uavs](https://www.exactlyinfinite.com/phoenix), [building stupid shit](https://cqplabs.neophilus.net/), [art](https://www.neophilus.net/whispers/) and making friends with neighbourhood cats.
+Outside of academic pursuits; my interests include [travelling](https://odyssey.neophilus.net), rock climbing, trampoline gymnastics, vertical farming & areoponics, [building multirotor uavs](https://phoenix.exactlyinfinite.com/), [building stupid shit](https://cqplabs.neophilus.net/), [art](https://whispers.neophilus.net/) and making friends with neighbourhood cats.
 
 
