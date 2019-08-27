@@ -32,7 +32,7 @@ serve: $(JSTARGETS)
 	zola serve
 
 deploy: search css
-	rsync -avr --chown=www-data:www-data --checksum --exclude 'keybase.txt' --delete -e ssh public/ AkashaR:axiomatic/
+	rsync -avr --chown=http:www --checksum --exclude 'keybase.txt' --exclude 'papers/.stfolder' --delete -e ssh public/ AkashaR:axiomatic/
 
 clean:
 	@-rm -f $(JSTARGETS)
