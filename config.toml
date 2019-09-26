@@ -1,6 +1,7 @@
 title = "Axiomatic Semantics"
 description = "Brute force solutions with proofs by intimidation"
 base_url = "https://axiomatic.neophilus.net"
+default_language = "en"
 
 compile_sass = true
 highlight_code = true

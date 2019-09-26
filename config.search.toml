@@ -2,6 +2,8 @@ title = "Axiomatic Semantics"
 description = "Brute force solutions with proofs by intimidation"
 base_url = "https://axiomatic.neophilus.net"
 
+default_language = "en"
+compile_sass = true # zola#756, will be fixed in 0.9
 build_search_index = true
 
 taxonomies = [
