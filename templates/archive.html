@@ -3,10 +3,13 @@
 {% block content %}
 <article class="post">
     {% set section = get_section(path="_index.md") %}
-    {% for page in section.pages %}
+    {% for year, pages in section.pages | group_by(attribute="year") %}
+        <div class="date"><span>{{ year }}</span></div>
+        {% for page in pages %}
         <h2 class="list"><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
         <time class="published" datetime="{{ page.date }}">{{ page.date | date(format="%B %e, %Y") }}</time>
         <p>{{ page.description }}</p>
+        {% endfor %}
     {% endfor %}
 </article>
 {% endblock content %}
