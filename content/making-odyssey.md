@@ -198,7 +198,7 @@ There's a lot of work to do to build `d3-geo` functionality into Elm, so I didn'
 I'm collaborating with a few people in the Elm community on getting this done, but the process will probably be quite slow since we want to design the API right.
 
 This is the oldest portion of the project, since it was salvaged from an earlier version of my gallery.
-An earlier post gives you some insight on [how to construct a world.json](./including-small-countries-in-your-world.json/index.md).
+An earlier post gives you some insight on [how to construct a world.json](@/including-small-countries-in-your-world.json/index.md).
 
 ## Automating the build process
 

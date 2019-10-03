@@ -15,7 +15,7 @@ Writing a thesis. Writing at home, writing at uni, at work, on planes, on machin
 
 What hasn't been that nice about it are the few binary dependencies I keep forgetting to track or that nasty little bug that __xelatex__ has wherein it just utterly fails when you try and draw a gradient or any form of shading. To overcome this issue I've been running a two step compile process, where figures that require shading are built using __pdflatex__, then if text is required (for labels or annotations for example), __xelatex__ is called. This allows the figure font to remain homologous with the main text and the pre-rendered shaded geometry can be simply imported with some form of `\includegraphics{}` command.
 
-However the figure count is now over 50 and climbing, so building all of them on a new machine or propagating broad changes has become a cumbersome task. Ever since writing my first [Makefile](/unveiling-some-makefile-black-magic), I've enjoyed making simple ones for menial tasks. Nothing fancy, but useful enough to take the time and understand the syntax just that little bit more. Building these figures was an obvious case for some new `Makefile` magic.
+However the figure count is now over 50 and climbing, so building all of them on a new machine or propagating broad changes has become a cumbersome task. Ever since writing my first [Makefile](@/unveiling-some-makefile-black-magic.md), I've enjoyed making simple ones for menial tasks. Nothing fancy, but useful enough to take the time and understand the syntax just that little bit more. Building these figures was an obvious case for some new `Makefile` magic.
 
 Here's what I came up with on a train to Bendigo with two random obnoxious children crawling over me:
 

@@ -103,7 +103,7 @@ and wrote an appropriate style
 ```
 
 At some stage soon I'll put together a pull request to add something similar to Isso directly, but that will probably require an addition to the configuration file. Allowing the author to identify themselves without the above hassle.
-To see this in action, perhaps take a look at [one of the only actual comment sections on this website](/converting-4k-content-for-samsung-uhd-televisions).
+To see this in action, perhaps take a look at [one of the only actual comment sections on this website](@/converting-4k-content-for-samsung-uhd-televisions.md).
 And yes: the fact that I've just ranted about commenting systems without having much use of a comment system at all does not escape me.
 Perhaps my readers don't care for Disqus more-so than I?
 

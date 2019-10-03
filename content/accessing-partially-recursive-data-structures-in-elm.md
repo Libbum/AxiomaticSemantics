@@ -11,7 +11,7 @@ banner = "forest"
 So you've read over the [Recursive Type Aliases](https://github.com/elm-lang/elm-compiler/blob/0.18.0/hints/recursive-alias.md) hints in the **Elm** compiler documentation and that all seems straightforward.
 Mainly because it is, but unfortunately simple examples like this are seldom actually useful when you need to actually *do* something.
 
-In my [last post](/nesting-structures-from-flat-indexes/), I talked about generating a nested structure of comments and any replies pulled from a database at the backend of [oration](https://github.com/Libbum/oration), so that this data could be exposed via an <abbr title="Application Program Interface">API</abbr> in <abbr title="JavaScript Object Notation">JSON</abbr> format.
+In my [last post](@/nesting-structures-from-flat-indexes.md), I talked about generating a nested structure of comments and any replies pulled from a database at the backend of [oration](https://github.com/Libbum/oration), so that this data could be exposed via an <abbr title="Application Program Interface">API</abbr> in <abbr title="JavaScript Object Notation">JSON</abbr> format.
 Now, I'd like to continue the conversation at the frontend&mdash;hopefully answering the question: how do we invoke a recursive type and do some work with one?
 
 <!-- more -->

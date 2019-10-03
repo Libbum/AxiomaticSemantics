@@ -8,7 +8,7 @@ tags = ["JavaScript", "Zola", "Tera"]
 banner = "map"
 +++
 
-It's been a while since I last [ranted about publication lists](/generating-a-publication-list-from-mulitple-orcids/), so let's go ahead and see if we can't re-solve this non-issue in a different context.
+It's been a while since I last [ranted about publication lists](@/generating-a-publication-list-from-mulitple-ORCiDs.md), so let's go ahead and see if we can't re-solve this non-issue in a different context.
 The [papers](/papers/) section of this blog has always been manually updated. Back in the [Hakyll](https://jaspervdj.be/hakyll/) days [there was an attempt](https://github.com/Libbum/AS-Hakyll/commit/28a471d594f31a80995ee06101fd6a2375b684ad) to rectify this, but it caused no end of frustration.
 Gutenberg's system didn't really allow for an automated process either, so the whole idea had been shelved indefinitely.
 
