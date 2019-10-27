@@ -17,7 +17,7 @@
 
 {% block content %}
 <article class="post">
-    {% set pubs = load_data(path="src/publications.json") %}
+    {% set pubs = load_data(path="../src/publications.json") %}
     <h2>Pre-prints</h2>
     <ul class="alt">
     {% for publication in pubs | filter(attribute="type", value="article") | sort(attribute="sort") | reverse %}
