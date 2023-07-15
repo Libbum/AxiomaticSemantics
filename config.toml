@@ -4,7 +4,6 @@ base_url = "https://axiomatic.neophilus.net"
 default_language = "en"
 
 compile_sass = true
-highlight_theme = "charcoal"
 
 generate_feed = true
 
@@ -14,7 +13,9 @@ taxonomies = [
 
 [markdown]
 highlight_code = true
-extra_syntaxes = ["syntaxes"]
+highlight_theme = "charcoal"
+extra_syntaxes_and_themes = ["syntaxes"]
+smart_punctuation = true
 
 [extra.author]
 name = "Tim DuBois"
