@@ -1,0 +1,7 @@
+.isso-comment.isso-is-page-author > .isso-text-wrapper {
+    background-color: #bae0ea;
+}
+
+.isso-comment.isso-is-page-author > .isso-text-wrapper > .isso-comment-header > .isso-author {
+    color: #19798d;
+}
